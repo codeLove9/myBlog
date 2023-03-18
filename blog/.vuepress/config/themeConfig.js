@@ -1,36 +1,86 @@
 module.exports = {
-  siteName: '1980\'s Maker',
+  siteName: "1980's Maker",
   logo: '/logo.jpg',
-  siteDesc: '一个出生于80年代的程序员 -- 喜爱创[客]、美[食]、动[画]、怀[旧]的新手艺人',
+  siteDesc: '一个出生于1999年的Font End Web开发程序员',
   nav: [
     { text: '🏠 Home', link: '/' },
-    { text: '📖 Theme', link: '/categories/theme/' },
-    { text: '🐉 Maker', link: '/categories/maker/' },
-    { text: '🔥 Animation', link: '/categories/animation/' },
-    { text: '📽 Old Time', link: '/categories/oldtime/' },
-    { text: '🔗 friend-links', link: '/friend-links/' },
+    {
+      text: '📖 Study Process',
+      // link: '/categories/studyprogress/',
+      items: [
+        {
+          text: 'HTML+CSS',
+          link: '/categories/htmlcss/'
+        },
+        {
+          text: 'JS',
+          link: '/categories/js/'
+        },
+        {
+          text: 'Vue',
+          link: '/categories/vue/'
+        },
+        {
+          text: 'React',
+          link: '/categories/react/'
+        },
+        {
+          text: 'Uniapp',
+          link: '/categories/Uniapp/'
+        }
+      ]
+    },
+    { text: '🐉 Program Experience', link: '/categories/programexperience/' },
+    // { text: '🔥 Animation', link: '/categories/animation/' },
+    {
+      text: '📽 Program Difficulty',
+      link: '/categories/programdifficulty/',
+      items: [
+        {
+          text: 'HTML+CSS',
+          link: '/categories/htmlcss/'
+        },
+        {
+          text: 'JS',
+          link: '/categories/js/'
+        },
+        {
+          text: 'Vue',
+          link: '/categories/vue/'
+        },
+        {
+          text: 'React',
+          link: '/categories/react/'
+        },
+        {
+          text: 'Uniapp',
+          link: '/categories/Uniapp/'
+        }
+      ]
+    },
+    { text: '🔗 Friend Links', link: '/friend-links/' }
   ],
   searchPlaceholder: 'Search',
   searchMaxSuggestions: 10,
   social: [
     {
       type: 'email',
-      link: 'cmgddd@163.com'
+      link: '1071626267@qq.com'
     },
     {
       type: 'github',
-      link: '80maker/vuepress-theme-maker'
+      link: 'codeLove9'
     },
     {
       type: 'qq',
-      link: '//qm.qq.com/cgi-bin/qm/qr?k=fknyQ434nkzVUWUmJ6rpIPctkS9eyQaZ&jump_from=webapi'
+      link: 'https://qm.qq.com/cgi-bin/qm/qr?k=BOQqo_x9qElCxHnkHdSO3RToUPbpyyqW&noverify=0&personal_qrcode_source=3'
     },
     {
-      type: 'feed',
-      link: '/rss.xml'
+      type: 'csdn',
+      link: 'https://blog.csdn.net/a1071626267'
     }
   ],
-  copyright: '© 2020 ❤️ <a target="_blank" href="https://17ria.com/">Neil Chen</a>',
+  copyright: '© 2023 ❤️ <a target="_blank" href="https://github.com/codeLove9">Xiao Chen</a>',
   blog: {
     directories: [
       {
@@ -43,12 +93,12 @@ module.exports = {
           perPagePosts: 10,
           prevText: '',
           nextText: ''
-        },
+        }
       }
     ],
     frontmatters: [
       {
-        id: "tag",
+        id: 'tag',
         keys: ['tag', 'tags'],
         path: '/tags/',
         frontmatter: { title: 'Tag' },
@@ -59,7 +109,7 @@ module.exports = {
         }
       },
       {
-        id: "category",
+        id: 'category',
         keys: ['category', 'categories'],
         path: '/categories/',
         frontmatter: { title: 'Category' },
@@ -71,11 +121,11 @@ module.exports = {
       }
     ],
     sitemap: {
-      hostname: 'https://80shuo.com',
+      // hostname: 'https://80shuo.com',
       exclude: ['/404.html']
     },
     feed: {
-      canonical_base: 'http://80shuo.com',
+      canonical_base: 'http://80shuo.com'
     },
     palette: {},
     comment: {}
