@@ -16,13 +16,6 @@
            :class="`icon-${item.type}`"
            :title="`${item.type}`"
            :href="`https://github.com/${item.link}`">{{item.type}}</a>
-        <Icon v-else-if="item.type === 'csdn'"
-              :key="item.type+2"
-              target="_blank"
-              rel="external nofollow noopener"
-              :icon="`${item.type}`"
-              :title="`${item.type}`"
-              :href="`${item.link}`">{{item.type}}</Icon>
         <a v-else
            :key="item.type+3"
            target="_blank"
@@ -30,15 +23,17 @@
            :class="`icon-${item.type}`"
            :title="`${item.type}`"
            :href="`${item.link}`">{{item.type}}</a>
-
       </template>
-
+      <a target="_blank"
+         href="https://blog.csdn.net/a1071626267"
+         title="csdn"
+         rel="external nofollow noopener">
+        <i class="iconfont icon-csdn"
+           style="vertical-align: text-bottom;"></i></a>
     </div>
     <p class="copyright"
        v-html="$themeConfig.copyright"></p>
     <p class="powered">
-      <Icon icon="csdn" />
-      <i class="icon-email" />
       <span class="">Powered by <a href="https://vuepress.vuejs.org"
            target="_blank"
            rel="external nofollow noopener">VuePress</a></span>

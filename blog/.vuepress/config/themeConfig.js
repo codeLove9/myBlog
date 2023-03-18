@@ -74,11 +74,11 @@ module.exports = {
     {
       type: 'qq',
       link: 'https://qm.qq.com/cgi-bin/qm/qr?k=BOQqo_x9qElCxHnkHdSO3RToUPbpyyqW&noverify=0&personal_qrcode_source=3'
-    },
-    {
-      type: 'csdn',
-      link: 'https://blog.csdn.net/a1071626267'
     }
+    // {
+    //   type: 'csdn',
+    //   link: 'https://blog.csdn.net/a1071626267'
+    // }
   ],
   copyright: '© 2023 ❤️ <a target="_blank" href="https://github.com/codeLove9">Xiao Chen</a>',
   blog: {
