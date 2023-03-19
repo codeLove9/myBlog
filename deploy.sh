@@ -10,7 +10,7 @@ npm run blog:build
 cd blog/.vuepress/dist
 
 # 如果是发布到自定义域名
-echo '80shuo.com' > CNAME
+#echo '80shuo.com' > CNAME
 
 git init
 git add -A
@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:80maker/80maker.github.io.git master:gh-pages
+git push -f gh repo clone codeLove9/myBlog master:gh-pages
 
 cd -
