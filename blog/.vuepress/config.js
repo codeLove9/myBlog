@@ -2,7 +2,7 @@ module.exports = {
   title: 'XiaoChen\'s Blog',
   description: '一个出生于1999年的Font End Web开发程序员',
   port: 8088,
-  base: '/blog/',
+  base: '/myBlog/',
   markdown: {
     lineNumbers: true,
     extractHeaders: [ 'h2', 'h3', 'h4' ],
