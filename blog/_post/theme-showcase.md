@@ -1,6 +1,6 @@
 ---
-date: 2021-01-12
-title: Maker Theme Markdown 语法示例
+date: 2023-01-12
+title: VuePress Markdown 语法示例
 category: theme
 tags:
   - VuePress

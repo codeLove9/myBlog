@@ -39,9 +39,8 @@
               <p class="article-copyright__text">{{$page.lastUpdated}}</p>
             </li>
             <li class="article-copyright__item">
-              <strong class="article-copyright__title">Copyright<span>:</span></strong>
-              <p class="article-copyright__text">自由转载-非商用-禁止演绎-保持署名（<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC
-                  BY-NC-ND 4.0</a>）</p>
+              <strong class="article-copyright__title">author<span>:</span></strong>
+              <p class="article-copyright__text">XiaoChen</p>
             </li>
             <li class="article-copyright__item">
               <strong class="article-copyright__title">Link<span>:</span></strong>

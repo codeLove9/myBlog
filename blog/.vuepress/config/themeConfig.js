@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: "1980's Maker",
+  siteName: "XiaoChen's Blog",
   logo: '/logo.jpg',
   siteDesc: '一个出生于1999年的Font End Web开发程序员',
   nav: [
@@ -10,51 +10,50 @@ module.exports = {
       items: [
         {
           text: 'HTML+CSS',
-          link: '/categories/htmlcss/'
+          link: '/studyprogress/htmlcss/'
         },
         {
           text: 'JS',
-          link: '/categories/js/'
+          link: '/studyprogress/js/'
         },
         {
           text: 'Vue',
-          link: '/categories/vue/'
+          link: '/studyprogress/vue/'
         },
         {
           text: 'React',
-          link: '/categories/react/'
+          link: '/studyprogress/react/'
         },
         {
           text: 'Uniapp',
-          link: '/categories/Uniapp/'
+          link: '/studyprogress/uniapp/'
         }
       ]
     },
-    { text: '🐉 Program Experience', link: '/categories/programexperience/' },
-    // { text: '🔥 Animation', link: '/categories/animation/' },
+    { text: '🐉 Program Demand', link: '/programdemand/' },
     {
       text: '📽 Program Difficulty',
-      link: '/categories/programdifficulty/',
+      // link: '/categories/programdifficulty/',
       items: [
         {
           text: 'HTML+CSS',
-          link: '/categories/htmlcss/'
+          link: '/programdifficulty/htmlcss/'
         },
         {
           text: 'JS',
-          link: '/categories/js/'
+          link: '/programdifficulty/js/'
         },
         {
           text: 'Vue',
-          link: '/categories/vue/'
+          link: '/programdifficulty/vue/'
         },
         {
           text: 'React',
-          link: '/categories/react/'
+          link: '/programdifficulty/react/'
         },
         {
           text: 'Uniapp',
-          link: '/categories/Uniapp/'
+          link: '/programdifficulty/uniapp/'
         }
       ]
     },
@@ -80,7 +79,7 @@ module.exports = {
     //   link: 'https://blog.csdn.net/a1071626267'
     // }
   ],
-  copyright: '© 2023 ❤️ <a target="_blank" href="https://github.com/codeLove9">Xiao Chen</a>',
+  copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" href="https://github.com/codeLove9">Xiao Chen</a>`,
   blog: {
     directories: [
       {
@@ -127,7 +126,47 @@ module.exports = {
     feed: {
       canonical_base: 'http://80shuo.com'
     },
-    palette: {},
+    // 访客主题配色自定义
+    palette: {
+      colors: [
+        {
+          btnColor: '#673ab7',
+          paletteVars: {
+            dark: `--theme-accent-color: #673ab7;
+          --theme-foreground-color: #d8d8d8;
+          --theme-border-color: #444;
+          --theme-background: #202020;
+          --theme-sidebar-background: #673ab7;
+          --theme-card-background: #252525;
+          --theme-card-color: #252525;
+          --theme-bg-tertiary-color: #161b22;
+          --theme-accent-color-005: rgba(103,58,183,0.05);
+          --theme-accent-color-01: rgba(103,58,183,0.1);
+          --theme-accent-color-02: rgba(103,58,183,0.2);
+          --theme-accent-color-04: rgba(103,58,183,0.4);
+          --theme-accent-color-08: rgba(103,58,183,0.8);`,
+            light: `--theme-accent-color: #673ab7;
+          --theme-foreground-color: #363636;
+          --theme-border-color: #e0e0e0;
+          --theme-sidebar-background: #673ab7 linear-gradient(to bottom, #673ab7 0%, #522e92 100%);
+          --theme-card-background: #fff;
+          --theme-bg-tertiary-color: #f6f8fa;
+          --theme-accent-color-005: rgba(103,58,183,0.05);
+          --theme-accent-color-01: rgba(103,58,183,0.1);
+          --theme-accent-color-02: rgba(103,58,183,0.2);
+          --theme-accent-color-04: rgba(103,58,183,0.4);
+          --theme-accent-color-08: rgba(103,58,183,0.8);`
+          }
+        },
+        {
+          btnColor: '#3f51b5',
+          paletteVars: {
+            dark: `--theme-accent-color: #3f51b5; --theme-sidebar-background: #3f51b5;`,
+            light: `--theme-accent-color: #3f51b5; --theme-sidebar-background: #3f51b5;`
+          }
+        }
+      ]
+    },
     comment: {}
   }
 }
