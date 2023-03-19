@@ -1,0 +1,41 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "XiaoChen's Blog",
+    "home_page_url": "http://80shuo.com",
+    "feed_url": "http://80shuo.com/feed.json",
+    "description": "一个出生于1999年的Font End Web开发程序员",
+    "items": [
+        {
+            "id": "http://80shuo.com/post/2023/01/26/md5.html",
+            "url": "http://80shuo.com/post/2023/01/26/md5.html",
+            "title": "浏览器端不用第三方包也可以获取md5值",
+            "summary": "\n利益于JS的同构特性,crypto虽然是Node.js的自带模块,但同时也能用于Web浏览器端。\n",
+            "date_modified": "2023-01-25T16:00:00.000Z"
+        },
+        {
+            "id": "http://80shuo.com/post/2023/01/01/theme-learning-concept.html",
+            "url": "http://80shuo.com/post/2023/01/01/theme-learning-concept.html",
+            "title": "VuePress中的常用术语",
+            "date_modified": "2023-01-01T00:00:00.000Z"
+        },
+        {
+            "id": "http://80shuo.com/post/2023/02/23/icon.html",
+            "url": "http://80shuo.com/post/2023/02/23/icon.html",
+            "title": "内置图标 (Icon字体)",
+            "date_modified": "2023-02-22T16:00:00.000Z"
+        },
+        {
+            "id": "http://80shuo.com/post/2022/12/26/theme-learning.html",
+            "url": "http://80shuo.com/post/2022/12/26/theme-learning.html",
+            "title": "从零开始制作VuePress主题",
+            "date_modified": "2022-12-26T00:00:00.000Z"
+        },
+        {
+            "id": "http://80shuo.com/post/2023/01/12/theme-showcase.html",
+            "url": "http://80shuo.com/post/2023/01/12/theme-showcase.html",
+            "title": "VuePress Markdown 语法示例",
+            "image": "https://vuepress.vuejs.org/architecture.png",
+            "date_modified": "2023-01-12T00:00:00.000Z"
+        }
+    ]
+}
