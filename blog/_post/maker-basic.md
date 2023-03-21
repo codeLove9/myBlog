@@ -15,9 +15,9 @@ category: maker
 // .vuepress/config.js
 module.exports = {
   // 网站标题
-  title: '1980\'s Maker',
+  title: 'XiaoChen\'s Blog',
   // 网站描述
-  description: '一个出生于80年代的程序员 -- 喜爱创[客]、美[食]、动[画]、怀[旧]的新手艺人',
+  description: 'A front-end programmer born in 1999',
   themeConfig: {
     // 网站logo
     logo: '/logo.jpg',

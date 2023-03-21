@@ -1,11 +1,11 @@
 module.exports = {
-  title: 'XiaoChen\'s Blog',
-  description: '一个出生于1999年的Font End Web开发程序员',
+  title: "XiaoChen's Blog",
+  description: 'A front-end programmer born in 1999',
   port: 8088,
   base: '/myBlog/',
   markdown: {
     lineNumbers: true,
-    extractHeaders: [ 'h2', 'h3', 'h4' ],
+    extractHeaders: ['h2', 'h3', 'h4'],
     plugins: {
       'markdown-it-mark': true,
       'markdown-it-footnote': true,
