@@ -6,7 +6,7 @@ module.exports = {
     { text: '🏠 Home', link: '/' },
     {
       text: '📖 Study Process',
-      // link: '/categories/studyprogress/',
+      link: '/studyprogress/',
       items: [
         {
           text: 'HTML+CSS',
@@ -81,6 +81,7 @@ module.exports = {
   ],
   copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" href="https://github.com/codeLove9">Xiao Chen</a>`,
   blog: {
+    // TODO：配置目录
     directories: [
       {
         id: 'post',
@@ -88,6 +89,17 @@ module.exports = {
         path: '/',
         itemPermalink: '/post/:year/:month/:day/:slug.html',
         frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'studyprogresshtmlcss',
+        dirname: 'studyprogress/htmlcss',
+        path: '/studyprogress/htmlcss/',
+        itemPermalink: '/studyprogress/htmlcss/:year/:month/:day/:slug.html',
         pagination: {
           perPagePosts: 10,
           prevText: '',
