@@ -100,6 +100,7 @@ module.exports = {
         dirname: 'studyprogress/htmlcss',
         path: '/studyprogress/htmlcss/',
         itemPermalink: '/studyprogress/htmlcss/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
         pagination: {
           perPagePosts: 10,
           prevText: '',
