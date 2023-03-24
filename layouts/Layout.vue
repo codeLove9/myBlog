@@ -1,11 +1,9 @@
 <template>
-  <div
-    class="theme-container"
-    :class="pageClasses"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
-  >
-    <SideBar/>
+  <div class="theme-container"
+       :class="pageClasses"
+       @touchstart="onTouchStart"
+       @touchend="onTouchEnd">
+    <SideBar />
     <div class="theme-main">
       <slot name="main">
         <Home v-if="$page.pageType === 'home'" />
@@ -16,9 +14,9 @@
         <TagItem v-else-if="$page.pageType === 'tagItem'" />
         <FriendLink v-else-if="$page.pageType === 'friendLink'" />
         <Post v-else></Post>
-      </slot> 
+      </slot>
     </div>
-    <SvgSprite/>
+    <SvgSprite />
   </div>
 </template>
 
@@ -48,45 +46,28 @@ export default {
     FriendLink,
     SvgSprite
   },
-  data () {
+  data() {
     return {
       isSidebarOpen: false
     }
   },
   computed: {
-    shouldShowNavbar () {
+    shouldShowNavbar() {
       const { themeConfig } = this.$site
       const { frontmatter } = this.$page
-      if (
-        frontmatter.navbar === false
-        || themeConfig.navbar === false) {
+      if (frontmatter.navbar === false || themeConfig.navbar === false) {
         return false
       }
-      return (
-        this.$title
-        || themeConfig.logo
-        || themeConfig.repo
-        || themeConfig.nav
-        || this.$themeLocaleConfig.nav
-      )
+      return this.$title || themeConfig.logo || themeConfig.repo || themeConfig.nav || this.$themeLocaleConfig.nav
     },
-    shouldShowSidebar () {
+    shouldShowSidebar() {
       const { frontmatter } = this.$page
-      return (
-        !frontmatter.home
-        && frontmatter.sidebar !== false
-        && this.sidebarItems.length
-      )
+      return !frontmatter.home && frontmatter.sidebar !== false && this.sidebarItems.length
     },
-    sidebarItems () {
-      return resolveSidebarItems(
-        this.$page,
-        this.$page.regularPath,
-        this.$site,
-        this.$localePath
-      )
+    sidebarItems() {
+      return resolveSidebarItems(this.$page, this.$page.regularPath, this.$site, this.$localePath)
     },
-    pageClasses () {
+    pageClasses() {
       const userPageClass = this.$page.frontmatter.pageClass
       return [
         {
@@ -97,9 +78,9 @@ export default {
       ]
     }
   },
-  mounted () {
+  mounted() {
     this.$eventBus.$on('EV_TOGGLE_SIDE_BAR', () => {
-      this.isSidebarOpen = !this.isSidebarOpen;
+      this.isSidebarOpen = !this.isSidebarOpen
     })
     this.$router.afterEach(() => {
       this.isSidebarOpen = false
@@ -107,18 +88,18 @@ export default {
     })
   },
   methods: {
-    toggleSidebar (to) {
+    toggleSidebar(to) {
       this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
       this.$emit('toggle-sidebar', this.isSidebarOpen)
     },
     // side swipe
-    onTouchStart (e) {
+    onTouchStart(e) {
       this.touchStart = {
         x: e.changedTouches[0].clientX,
         y: e.changedTouches[0].clientY
       }
     },
-    onTouchEnd (e) {
+    onTouchEnd(e) {
       const dx = e.changedTouches[0].clientX - this.touchStart.x
       const dy = e.changedTouches[0].clientY - this.touchStart.y
       if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
@@ -133,6 +114,6 @@ export default {
 }
 </script>
 <style lang="stylus">
-@require '../styles/mobile'
-@require '../styles/color_scheme'
+@require '../styles/mobile';
+@require '../styles/color_scheme';
 </style>
