@@ -101,6 +101,50 @@ module.exports = (options, { themeConfig }) => {
               prevText: '',
               nextText: ''
             }
+          },
+          {
+            id: 'studyprogressjs',
+            dirname: 'studyprogress/js',
+            path: '/studyprogress/js/',
+            itemPermalink: '/studyprogress/js/:year/:month/:day/:slug.html',
+            pagination: {
+              perPagePosts: 10,
+              prevText: '',
+              nextText: ''
+            }
+          },
+          {
+            id: 'studyprogressvue',
+            dirname: 'studyprogress/vue',
+            path: '/studyprogress/vue/',
+            itemPermalink: '/studyprogress/vue/:year/:month/:day/:slug.html',
+            pagination: {
+              perPagePosts: 10,
+              prevText: '',
+              nextText: ''
+            }
+          },
+          {
+            id: 'studyprogressreact',
+            dirname: 'studyprogress/react',
+            path: '/studyprogress/react/',
+            itemPermalink: '/studyprogress/react/:year/:month/:day/:slug.html',
+            pagination: {
+              perPagePosts: 10,
+              prevText: '',
+              nextText: ''
+            }
+          },
+          {
+            id: 'studyprogressuniapp',
+            dirname: 'studyprogress/uniapp',
+            path: '/studyprogress/uniapp/',
+            itemPermalink: '/studyprogress/uniapp/:year/:month/:day/:slug.html',
+            pagination: {
+              perPagePosts: 10,
+              prevText: '',
+              nextText: ''
+            }
           }
         ],
         frontmatters: [
