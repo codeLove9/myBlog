@@ -81,7 +81,7 @@ module.exports = {
   ],
   copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" href="https://github.com/codeLove9">Xiao Chen</a>`,
   blog: {
-    // TODO：配置目录
+    // TODO：main配置目录
     directories: [
       {
         id: 'post',
@@ -100,6 +100,54 @@ module.exports = {
         dirname: 'studyprogress/htmlcss',
         path: '/studyprogress/htmlcss/',
         itemPermalink: '/studyprogress/htmlcss/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'studyprogressjs',
+        dirname: 'studyprogress/js',
+        path: '/studyprogress/js/',
+        itemPermalink: '/studyprogress/js/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'studyprogressvue',
+        dirname: 'studyprogress/vue',
+        path: '/studyprogress/vue/',
+        itemPermalink: '/studyprogress/vue/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'studyprogressreact',
+        dirname: 'studyprogress/react',
+        path: '/studyprogress/react/',
+        itemPermalink: '/studyprogress/react/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'studyprogressuniapp',
+        dirname: 'studyprogress/uniapp',
+        path: '/studyprogress/uniapp/',
+        itemPermalink: '/studyprogress/uniapp/:year/:month/:day/:slug.html',
         frontmatter: { title: '' },
         pagination: {
           perPagePosts: 10,

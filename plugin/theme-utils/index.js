@@ -16,6 +16,8 @@ const wordcount = function (content) {
   }
   return Math.round(count / 100) / 10 + 'k'
 }
+// 定义Pagetype返回值为home的路由列表
+const HomePagetypeList = ['/', '/studyprogress/htmlcss/', '/studyprogress/js/', '/studyprogress/vue/', '/studyprogress/react/', '/studyprogress/uniapp/']
 
 module.exports = (options = {}, context) => ({
   name: 'maker-theme-utils',
@@ -31,8 +33,8 @@ module.exports = (options = {}, context) => ({
     } else if (/^\/tags\/\w/.test($page.path)) {
       return ($page.pageType = 'tagItem')
       // TODO: pagetype返回类型
-      // || $page.path.startsWith('/test/')
-    } else if ($page.path === '/' || $page.path.startsWith('/page/') || $page.path === '/studyprogress/htmlcss/') {
+      // } else if ($page.path === '/' || $page.path.startsWith('/page/') || $page.path === '/studyprogress/htmlcss/') {
+    } else if (~HomePagetypeList.indexOf($page.path) || $page.path.startsWith('/page/')) {
       return ($page.pageType = 'home')
     } else if ($page.path === '/friend-links/') {
       return ($page.pageType = 'friendLink')
