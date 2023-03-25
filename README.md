@@ -1,10 +1,10 @@
 # vuepress-theme-maker
 
 <p align="center">
-  <a href='https://80shuo.com/'><img src='https://80shuo.com/images/maker-logo.svg' height='120px'></a>
+  <a href='https://github.com/codeLove9/myBlog'><img src='https://80shuo.com/images/maker-logo.svg' height='120px'></a>
 </p>
 
-A flat and clean Blog Theme for VuePress site. inspired by [Hexo-theme-inside](https://github.com/ikeq/hexo-theme-inside)
+A flat and clean Blog Theme for VuePress site. inspired by [Vuepress-theme-maker](https://github.com/80maker/vuepress-theme-maker)
 
 ## Features
 
@@ -45,19 +45,19 @@ module.exports = {
 }
 ```
 
-For more details, see [Theme Doc](https://80shuo.com/post/2020/12/23/maker.html)
+For more details, see [Theme Doc](https://codelove9.github.io/myBlog/)
 
 ## Demo
 
-[80shuo.com](https://github.com/80maker/80shuo)
+[github-pages](https://codelove9.github.io/myBlog/)
 
 ## Screenshot
 
-![](https://80shuo.com/images/screenshot-1.jpg)
+![](https://codelove9.github.io/images/screenshot-1.jpg)
 
-![](https://80shuo.com/images/screenshot-2.jpg)
+![](https://codelove9.github.io/images/screenshot-2.jpg)
 
-![](https://80shuo.com/images/screenshot-3.jpg)
+![](https://codelove9.github.io/images/screenshot-3.jpg)
 
 ## Deploy to Github Pages
 
@@ -65,14 +65,8 @@ For more details, see [Theme Doc](https://80shuo.com/post/2020/12/23/maker.html)
 npm run deploy
 ```
 
-## Feedback
-
-Feedback to developer: https://github.com/80maker/vuepress-theme-maker/issues
 ## Thanks to
 
 - [VuePress](https://vuepress.vuejs.org/)
 - [@vuepress/plugin-blog](https://github.com/vuepress/vuepress-plugin-blog)
 - [@vuepress/theme-blog](https://github.com/vuepress/vuepress-theme-blog)
-
-### license
-[MIT](https://github.com/80maker/vuepress-theme-maker/blob/master/LICENSE)
