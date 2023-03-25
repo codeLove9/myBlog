@@ -154,6 +154,67 @@ module.exports = {
           prevText: '',
           nextText: ''
         }
+      },
+      // 11
+      {
+        id: 'progressdifficultyhtmlcss',
+        dirname: 'progressdifficulty/htmlcss',
+        path: '/progressdifficulty/htmlcss/',
+        itemPermalink: '/progressdifficulty/htmlcss/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'progressdifficultyjs',
+        dirname: 'progressdifficulty/js',
+        path: '/progressdifficulty/js/',
+        itemPermalink: '/progressdifficulty/js/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'progressdifficultyvue',
+        dirname: 'progressdifficulty/vue',
+        path: '/progressdifficulty/vue/',
+        itemPermalink: '/progressdifficulty/vue/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'progressdifficultyreact',
+        dirname: 'progressdifficulty/react',
+        path: '/progressdifficulty/react/',
+        itemPermalink: '/progressdifficulty/react/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'progressdifficultyuniapp',
+        dirname: 'progressdifficulty/uniapp',
+        path: '/progressdifficulty/uniapp/',
+        itemPermalink: '/progressdifficulty/uniapp/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
       }
     ],
     frontmatters: [
