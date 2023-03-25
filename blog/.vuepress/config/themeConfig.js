@@ -57,7 +57,7 @@ module.exports = {
         }
       ]
     },
-    { text: '🔗 Friend Links', link: '/friend-links/' }
+    { text: '🔗 Personal Information', link: '/personalInformation/' }
   ],
   searchPlaceholder: 'Search',
   searchMaxSuggestions: 10,
