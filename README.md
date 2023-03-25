@@ -53,11 +53,11 @@ For more details, see [Theme Doc](https://codelove9.github.io/myBlog/)
 
 ## Screenshot
 
-![](https://codelove9.github.io/images/screenshot-1.jpg)
+![](https://github.com/codeLove9/myBlog/blob/gh-pages/images/screenshot-1.png)
 
-![](https://codelove9.github.io/images/screenshot-2.jpg)
+![](https://github.com/codeLove9/myBlog/blob/gh-pages/images/screenshot-2.png)
 
-![](https://codelove9.github.io/images/screenshot-3.jpg)
+![](https://github.com/codeLove9/myBlog/blob/gh-pages/images/screenshot-3.png)
 
 ## Deploy to Github Pages
 
