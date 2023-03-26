@@ -155,7 +155,6 @@ module.exports = {
           nextText: ''
         }
       },
-      // 11
       {
         id: 'progressdifficultyhtmlcss',
         dirname: 'progressdifficulty/htmlcss',

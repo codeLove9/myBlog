@@ -1,5 +1,5 @@
 ---
-date: 2021-04-06
+date: 2023-03-26
 title: CSS属性书写顺序
 category: frontend
 tags:
