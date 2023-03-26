@@ -156,10 +156,10 @@ module.exports = {
         }
       },
       {
-        id: 'progressdifficultyhtmlcss',
-        dirname: 'progressdifficulty/htmlcss',
-        path: '/progressdifficulty/htmlcss/',
-        itemPermalink: '/progressdifficulty/htmlcss/:year/:month/:day/:slug.html',
+        id: 'programdifficultyhtmlcss',
+        dirname: 'programdifficulty/htmlcss',
+        path: '/programdifficulty/htmlcss/',
+        itemPermalink: '/programdifficulty/htmlcss/:year/:month/:day/:slug.html',
         frontmatter: { title: '' },
         pagination: {
           perPagePosts: 10,
@@ -168,10 +168,10 @@ module.exports = {
         }
       },
       {
-        id: 'progressdifficultyjs',
-        dirname: 'progressdifficulty/js',
-        path: '/progressdifficulty/js/',
-        itemPermalink: '/progressdifficulty/js/:year/:month/:day/:slug.html',
+        id: 'programdifficultyjs',
+        dirname: 'programdifficulty/js',
+        path: '/programdifficulty/js/',
+        itemPermalink: '/programdifficulty/js/:year/:month/:day/:slug.html',
         frontmatter: { title: '' },
         pagination: {
           perPagePosts: 10,
@@ -180,10 +180,10 @@ module.exports = {
         }
       },
       {
-        id: 'progressdifficultyvue',
-        dirname: 'progressdifficulty/vue',
-        path: '/progressdifficulty/vue/',
-        itemPermalink: '/progressdifficulty/vue/:year/:month/:day/:slug.html',
+        id: 'programdifficultyvue',
+        dirname: 'programdifficulty/vue',
+        path: '/programdifficulty/vue/',
+        itemPermalink: '/programdifficulty/vue/:year/:month/:day/:slug.html',
         frontmatter: { title: '' },
         pagination: {
           perPagePosts: 10,
@@ -192,10 +192,10 @@ module.exports = {
         }
       },
       {
-        id: 'progressdifficultyreact',
-        dirname: 'progressdifficulty/react',
-        path: '/progressdifficulty/react/',
-        itemPermalink: '/progressdifficulty/react/:year/:month/:day/:slug.html',
+        id: 'programdifficultyreact',
+        dirname: 'programdifficulty/react',
+        path: '/programdifficulty/react/',
+        itemPermalink: '/programdifficulty/react/:year/:month/:day/:slug.html',
         frontmatter: { title: '' },
         pagination: {
           perPagePosts: 10,
@@ -204,10 +204,10 @@ module.exports = {
         }
       },
       {
-        id: 'progressdifficultyuniapp',
-        dirname: 'progressdifficulty/uniapp',
-        path: '/progressdifficulty/uniapp/',
-        itemPermalink: '/progressdifficulty/uniapp/:year/:month/:day/:slug.html',
+        id: 'programdifficultyuniapp',
+        dirname: 'programdifficulty/uniapp',
+        path: '/programdifficulty/uniapp/',
+        itemPermalink: '/programdifficulty/uniapp/:year/:month/:day/:slug.html',
         frontmatter: { title: '' },
         pagination: {
           perPagePosts: 10,
