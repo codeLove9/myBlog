@@ -16,8 +16,8 @@ const wordcount = function (content) {
   }
   return Math.round(count / 100) / 10 + 'k'
 }
-// 定义Pagetype返回值为home的路由列表
-const HomePagetypeList = ['/', '/studyprogress/htmlcss/', '/studyprogress/js/', '/studyprogress/vue/', '/studyprogress/react/', '/studyprogress/uniapp/']
+// 定义Pagetype返回值为home的数组
+const HomePagetypeList = ['/', '/studyprogress/htmlcss/', '/studyprogress/js/', '/studyprogress/vue/', '/studyprogress/react/', '/studyprogress/uniapp/', '/programdifficulty/htmlcss/', '/programdifficulty/js/', '/programdifficulty/vue/', '/programdifficulty/react/', '/programdifficulty/uniapp/']
 
 module.exports = (options = {}, context) => ({
   name: 'maker-theme-utils',
