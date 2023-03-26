@@ -1,6 +1,6 @@
 ---
 date: 2023-03-26
-title: 使用nth-child（）时发现的bug
+title: 使用nth-child()时发现的bug
 category: frontend
 tags:
   - htmlcss
