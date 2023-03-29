@@ -1,5 +1,5 @@
 ---
-title: 伪元素使用笔记
+title: CSS伪元素使用笔记
 date: 2023-03-26
 author: XiaoChen
 category: frontend
