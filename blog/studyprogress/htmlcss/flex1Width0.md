@@ -1,5 +1,5 @@
 ---
-title: 当有flex:1时定义width:0的作用是什么？
+title: CSS中当有flex:1时定义width:0的作用是什么？
 date: 2023-03-28
 author: XiaoChen
 category: frontend

@@ -1,5 +1,5 @@
 ---
-title: html之块元素、行内块元素、行内元素的认识和区别
+title: HTML之块元素、行内块元素、行内元素的认识和区别
 date: 2023-03-23
 author: XiaoChen
 category: frontend
