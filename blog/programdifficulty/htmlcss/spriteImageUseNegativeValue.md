@@ -3,7 +3,7 @@ date: 2023-03-26
 title: CSS精灵图坐标取负值原因
 category: frontend
 tags:
-  - htmlcss
+  - HTML/CSS
 ---
 
 * 精灵图主要针对小的背景图片使用
