@@ -3,7 +3,7 @@ date: 2023-03-26
 title: body设置背景图却不铺满浏览器的解决方法
 category: frontend
 tags:
-  - htmlcss
+  - HTML/CSS
 ---
 
  
