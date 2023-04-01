@@ -39,7 +39,7 @@ module.exports = (options = {}, context) => ({
     } else if ($page.path === '/friend-links/') {
       return ($page.pageType = 'friendLink')
     }
-    if ($page.pid === 'post' || $page.pid === 'studyprogresshtmlcss') {
+    if ($page.pid === 'post') {
       const { _strippedContent } = $page
       let content = _strippedContent.replace(/\s/g, '')
       $page.wordCount = wordcount(content)
