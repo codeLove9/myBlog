@@ -16,8 +16,13 @@ const wordcount = function (content) {
   }
   return Math.round(count / 100) / 10 + 'k'
 }
+
+// BUG： 此文件下一引入公共js文件就报错，只能再次定义一次，不知道原因
 // 定义Pagetype返回值为home的数组
 const HomePagetypeList = ['/', '/studyprogress/htmlcss/', '/studyprogress/js/', '/studyprogress/vue/', '/studyprogress/react/', '/studyprogress/uniapp/', '/programdifficulty/htmlcss/', '/programdifficulty/js/', '/programdifficulty/vue/', '/programdifficulty/react/', '/programdifficulty/uniapp/']
+
+// 定义pid列表
+const pidList = ['post', 'studyprogresshtmlcss', 'studyprogressjs', 'studyprogressvue', 'studyprogressreact', 'studyprogressuniapp', 'programdifficultyhtmlcss', 'programdifficultyjs', 'programdifficultyvue', 'programdifficultyreact', 'programdifficultyuniapp']
 
 module.exports = (options = {}, context) => ({
   name: 'maker-theme-utils',
@@ -39,7 +44,9 @@ module.exports = (options = {}, context) => ({
     } else if ($page.path === '/friend-links/') {
       return ($page.pageType = 'friendLink')
     }
-    if ($page.pid === 'post') {
+    // 文章字数和阅读时间统计
+    // if ($page.pid === 'post') {
+    if (~pidList.indexOf($page.pid)) {
       const { _strippedContent } = $page
       let content = _strippedContent.replace(/\s/g, '')
       $page.wordCount = wordcount(content)
