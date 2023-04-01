@@ -81,7 +81,7 @@ module.exports = {
   ],
   copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" href="https://github.com/codeLove9">Xiao Chen</a>`,
   blog: {
-    // TODO：main配置目录
+    // TODO：主配置目录
     directories: [
       {
         id: 'post',
@@ -97,7 +97,7 @@ module.exports = {
       },
       // id属性为blog插件暴露的$page.pid属性，不统一成post的话，Archives组件显示不出文章数和文章具体信息
       {
-        id: 'post',
+        id: 'studyprogresshtmlcss',
         dirname: 'studyprogress/htmlcss',
         path: '/studyprogress/htmlcss/',
         itemPermalink: '/studyprogress/htmlcss/:year/:month/:day/:slug.html',
@@ -109,7 +109,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'studyprogressjs',
         dirname: 'studyprogress/js',
         path: '/studyprogress/js/',
         itemPermalink: '/studyprogress/js/:year/:month/:day/:slug.html',
@@ -121,7 +121,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'studyprogressvue',
         dirname: 'studyprogress/vue',
         path: '/studyprogress/vue/',
         itemPermalink: '/studyprogress/vue/:year/:month/:day/:slug.html',
@@ -133,7 +133,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'studyprogressreact',
         dirname: 'studyprogress/react',
         path: '/studyprogress/react/',
         itemPermalink: '/studyprogress/react/:year/:month/:day/:slug.html',
@@ -145,7 +145,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'studyprogressuniapp',
         dirname: 'studyprogress/uniapp',
         path: '/studyprogress/uniapp/',
         itemPermalink: '/studyprogress/uniapp/:year/:month/:day/:slug.html',
@@ -157,7 +157,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'programdifficultyhtmlcss',
         dirname: 'programdifficulty/htmlcss',
         path: '/programdifficulty/htmlcss/',
         itemPermalink: '/programdifficulty/htmlcss/:year/:month/:day/:slug.html',
@@ -169,7 +169,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'programdifficultyjs',
         dirname: 'programdifficulty/js',
         path: '/programdifficulty/js/',
         itemPermalink: '/programdifficulty/js/:year/:month/:day/:slug.html',
@@ -181,7 +181,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'programdifficultyvue',
         dirname: 'programdifficulty/vue',
         path: '/programdifficulty/vue/',
         itemPermalink: '/programdifficulty/vue/:year/:month/:day/:slug.html',
@@ -193,7 +193,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'programdifficultyreact',
         dirname: 'programdifficulty/react',
         path: '/programdifficulty/react/',
         itemPermalink: '/programdifficulty/react/:year/:month/:day/:slug.html',
@@ -205,7 +205,7 @@ module.exports = {
         }
       },
       {
-        id: 'post',
+        id: 'programdifficultyuniapp',
         dirname: 'programdifficulty/uniapp',
         path: '/programdifficulty/uniapp/',
         itemPermalink: '/programdifficulty/uniapp/:year/:month/:day/:slug.html',
