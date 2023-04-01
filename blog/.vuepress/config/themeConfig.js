@@ -95,8 +95,9 @@ module.exports = {
           nextText: ''
         }
       },
+      // id属性为blog插件暴露的$page.pid属性，不统一成post的话，Archives组件显示不出文章数和文章具体信息
       {
-        id: 'studyprogresshtmlcss',
+        id: 'post',
         dirname: 'studyprogress/htmlcss',
         path: '/studyprogress/htmlcss/',
         itemPermalink: '/studyprogress/htmlcss/:year/:month/:day/:slug.html',
@@ -108,7 +109,7 @@ module.exports = {
         }
       },
       {
-        id: 'studyprogressjs',
+        id: 'post',
         dirname: 'studyprogress/js',
         path: '/studyprogress/js/',
         itemPermalink: '/studyprogress/js/:year/:month/:day/:slug.html',
@@ -120,7 +121,7 @@ module.exports = {
         }
       },
       {
-        id: 'studyprogressvue',
+        id: 'post',
         dirname: 'studyprogress/vue',
         path: '/studyprogress/vue/',
         itemPermalink: '/studyprogress/vue/:year/:month/:day/:slug.html',
@@ -132,7 +133,7 @@ module.exports = {
         }
       },
       {
-        id: 'studyprogressreact',
+        id: 'post',
         dirname: 'studyprogress/react',
         path: '/studyprogress/react/',
         itemPermalink: '/studyprogress/react/:year/:month/:day/:slug.html',
@@ -144,7 +145,7 @@ module.exports = {
         }
       },
       {
-        id: 'studyprogressuniapp',
+        id: 'post',
         dirname: 'studyprogress/uniapp',
         path: '/studyprogress/uniapp/',
         itemPermalink: '/studyprogress/uniapp/:year/:month/:day/:slug.html',
@@ -156,7 +157,7 @@ module.exports = {
         }
       },
       {
-        id: 'programdifficultyhtmlcss',
+        id: 'post',
         dirname: 'programdifficulty/htmlcss',
         path: '/programdifficulty/htmlcss/',
         itemPermalink: '/programdifficulty/htmlcss/:year/:month/:day/:slug.html',
@@ -168,7 +169,7 @@ module.exports = {
         }
       },
       {
-        id: 'programdifficultyjs',
+        id: 'post',
         dirname: 'programdifficulty/js',
         path: '/programdifficulty/js/',
         itemPermalink: '/programdifficulty/js/:year/:month/:day/:slug.html',
@@ -180,7 +181,7 @@ module.exports = {
         }
       },
       {
-        id: 'programdifficultyvue',
+        id: 'post',
         dirname: 'programdifficulty/vue',
         path: '/programdifficulty/vue/',
         itemPermalink: '/programdifficulty/vue/:year/:month/:day/:slug.html',
@@ -192,7 +193,7 @@ module.exports = {
         }
       },
       {
-        id: 'programdifficultyreact',
+        id: 'post',
         dirname: 'programdifficulty/react',
         path: '/programdifficulty/react/',
         itemPermalink: '/programdifficulty/react/:year/:month/:day/:slug.html',
@@ -204,7 +205,7 @@ module.exports = {
         }
       },
       {
-        id: 'programdifficultyuniapp',
+        id: 'post',
         dirname: 'programdifficulty/uniapp',
         path: '/programdifficulty/uniapp/',
         itemPermalink: '/programdifficulty/uniapp/:year/:month/:day/:slug.html',

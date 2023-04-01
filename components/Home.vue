@@ -35,7 +35,6 @@ export default {
   },
   methods: {
     formateDate(val) {
-      console.log(this.$pagination.pages);
       return dayjs.utc(val).format(this.$themeConfig.dateFormat)
     }
   }
