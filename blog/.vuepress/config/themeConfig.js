@@ -57,6 +57,7 @@ module.exports = {
         }
       ]
     },
+    { text: '💐 git', link: '/git/' },
     { text: '🔗 Personal Information', link: '/personalInformation/' }
   ],
   searchPlaceholder: 'Search',
