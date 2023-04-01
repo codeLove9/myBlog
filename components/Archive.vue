@@ -19,6 +19,7 @@
   </div>
 </template>
 <script>
+import pidList from '../util/pidList'
 const DATE_MAP = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 export default {
   name: 'Archive',
@@ -27,7 +28,8 @@ export default {
       let res = {};
       let tmp = [];
       let list = this.$site.pages.filter(item => {
-        return item.pid === 'post';
+        // return item.pid === 'post' || item.pid === 'studyprogresshtmlcss';
+        return ~pidList.indexOf(item.pid)
       });
       list = list.sort((a,b) => {
         let time1 = new Date(a.frontmatter.date);
