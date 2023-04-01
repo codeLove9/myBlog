@@ -47,11 +47,12 @@ module.exports = {
 
 For more details, see [Theme Doc](https://codelove9.github.io/myBlog/)
 
-## Demo
+## Blog Online 
 
 [github-pages](https://codelove9.github.io/myBlog/)
 
 ## Screenshot
+> 可能因为网络原因图片请求失败，需要科学上网工具即可显示
 
 ![](https://github.com/codeLove9/myBlog/blob/gh-pages/images/screenshot-1.png)
 
