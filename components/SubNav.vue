@@ -15,12 +15,14 @@
     </div>
 </template>
 <script>
+import pidList from '../util/pidList'
 export default {
   name: 'SubNav',
   computed: {
     archivesCount() {
       let list = this.$site.pages.filter(item => {
-        return item.pid === 'post';
+        // return item.pid === 'post';
+        return ~pidList.indexOf(item.pid)
       });
       return list.length;
     }
