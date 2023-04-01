@@ -5,7 +5,10 @@
       <span class="icon-up" @click="scrollToTop"></span>
       <DarkMode/>
       <span class="icon-sidebar" @click="handleToggleSideBar" v-if="width < narrowWidth"></span>
-      <span class="icon-toc" v-if="$page.pid === 'post'" @click="toggleToc"></span>
+      <!-- 悬浮菜单目录 -->
+      <!-- <span class="icon-toc" v-if="$page.pid === 'post'" @click="toggleToc"></span>
+       -->
+      <span class="icon-toc" v-if="~pidList.indexOf($page.pid)" @click="toggleToc"></span>
       <span class="icon-search" @click.stop="toggleSearch"></span>
       
     </div>
@@ -33,6 +36,8 @@
 import Toc from '@theme/components/Toc.vue'
 import DarkMode from '@theme/components/DarkMode.vue'
 import { getCssVar } from '../../util'
+import pidList from '../../util/pidList'
+
 export default {
   name: 'FloatMenu',
   components: {
@@ -45,7 +50,8 @@ export default {
       scrollTop: 0,
       count: 0,
       narrowWidth: 0,
-      width: 0
+      width: 0,
+      pidList
     }
   },
   computed: {
