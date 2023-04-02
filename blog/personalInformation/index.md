@@ -13,6 +13,6 @@ cover: /images/friend.jpg
 name: XiaoChen  
 age: 24  
 gender: male  
-hometown: HuBei
-profession: Web Front-end development programmer
-ability: **Vue2, Vue3 ,Vuex, Vue-router, React, Redux,. React-router**
+hometown: HuBei  
+profession: Web Front-end development programmer  
+ability: **Vue2, Vue3 ,Vuex, Vue-router, React, Redux,. React-router**  
