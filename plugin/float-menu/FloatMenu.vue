@@ -8,7 +8,7 @@
       <!-- 悬浮菜单目录 -->
       <!-- <span class="icon-toc" v-if="$page.pid === 'post'" @click="toggleToc"></span>
        -->
-      <span class="icon-toc" v-if="~pidList.indexOf($page.pid)" @click="toggleToc"></span>
+      <span class="icon-toc" v-if="~pidList.indexOf($page.pid) || ~pathList.indexOf($page.path)" @click="toggleToc"></span>
       <span class="icon-search" @click.stop="toggleSearch"></span>
       
     </div>
@@ -37,6 +37,7 @@ import Toc from '@theme/components/Toc.vue'
 import DarkMode from '@theme/components/DarkMode.vue'
 import { getCssVar } from '../../util'
 import pidList from '../../util/pidList'
+import pathList from '../../util/pathList'
 
 export default {
   name: 'FloatMenu',
@@ -51,7 +52,8 @@ export default {
       count: 0,
       narrowWidth: 0,
       width: 0,
-      pidList
+      pidList,
+      pathList
     }
   },
   computed: {
