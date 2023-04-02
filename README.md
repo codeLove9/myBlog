@@ -52,13 +52,18 @@ For more details, see [Theme Doc](https://codelove9.github.io/myBlog/)
 [github-pages](https://codelove9.github.io/myBlog/)
 
 ## Screenshot
-> 可能因为网络原因图片请求失败，需要科学上网工具即可显示
+<!-- > 可能因为网络原因图片请求失败，需要科学上网工具即可显示
 
 ![](https://github.com/codeLove9/myBlog/blob/gh-pages/images/screenshot-1.png)
 
 ![](https://github.com/codeLove9/myBlog/blob/gh-pages/images/screenshot-2.png)
 
-![](https://github.com/codeLove9/myBlog/blob/gh-pages/images/screenshot-3.png)
+![](https://github.com/codeLove9/myBlog/blob/gh-pages/images/screenshot-3.png) -->
+
+<!-- 国内备用： -->
+[![screenshot-1.png](https://i.postimg.cc/zvJ9B4nY/screenshot-1.png)](https://postimg.cc/WFH9YWW5)
+[![screenshot-2.png](https://i.postimg.cc/FHgyTfWT/screenshot-2.png)](https://postimg.cc/hXvQjGqm)
+[![screenshot-3.png](https://i.postimg.cc/rmdqTV2k/screenshot-3.png)](https://postimg.cc/47TDbT3L)
 
 ## Deploy to Github Pages
 
