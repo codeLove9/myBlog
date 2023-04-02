@@ -1,10 +1,10 @@
-# vuepress-theme-maker
+# XiaoChen's Blog
 
 <p align="center">
   <a href='https://github.com/codeLove9/myBlog'><img src='https://80shuo.com/images/maker-logo.svg' height='120px'></a>
 </p>
 
-A flat and clean Blog Theme for VuePress site. inspired by [Vuepress-theme-maker](https://github.com/80maker/vuepress-theme-maker)
+A flat and clean Blog for VuePress site. inspired by [Vuepress-theme-maker](https://github.com/80maker/vuepress-theme-maker)
 
 ## Features
 
@@ -63,7 +63,7 @@ For more details, see [Theme Doc](https://codelove9.github.io/myBlog/)
 <!-- 国内备用： -->
 [![screenshot-1.png](https://i.postimg.cc/zvJ9B4nY/screenshot-1.png)](https://postimg.cc/WFH9YWW5)
 [![screenshot-2.png](https://i.postimg.cc/FHgyTfWT/screenshot-2.png)](https://postimg.cc/hXvQjGqm)
-[![screenshot-3.png](https://i.postimg.cc/rmdqTV2k/screenshot-3.png)](https://postimg.cc/47TDbT3L)
+[![screenshot-3.png](https://i.postimg.cc/t4K1Yg7t/screenshot-3.png)](https://postimg.cc/QFqNzhQH)
 
 ## Deploy to Github Pages
 
