@@ -96,7 +96,7 @@ module.exports = {
           nextText: ''
         }
       },
-      // id属性为blog插件暴露的$page.pid属性，不统一成post的话，Archives组件显示不出文章数和文章具体信息
+      // id属性为blog插件暴露的$page.pid属性
       {
         id: 'studyprogresshtmlcss',
         dirname: 'studyprogress/htmlcss',
