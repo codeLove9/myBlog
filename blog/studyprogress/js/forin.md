@@ -1,5 +1,5 @@
 ---
-title: js之for in循环遍历对象（包括输出value值为什么是obj[k]而不是obj.k）
+title: JS之for in循环遍历对象（包括输出value值为什么是obj[k]而不是obj.k）
 date: 2023-04-01
 author: XiaoChen
 category: frontend
