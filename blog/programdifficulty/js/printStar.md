@@ -1,5 +1,5 @@
 ---
-title: js中打印星星或是99乘法表定义str为数值或者字符串的原因
+title: JS中打印星星或是99乘法表定义str为数值或者字符串的原因
 date: 2023-03-31
 author: XiaoChen
 category: frontend
