@@ -4,7 +4,7 @@ date: 2023-04-07
 author: XiaoChen
 category: frontend
 tags:
-  - Vue
+  - Node
 ---
 
 ## req.[params](https://so.csdn.net/so/search?q=params&spm=1001.2101.3001.7020)：请求路径后跟上“：参数”，返回一个以参数为属性的对象，属性值是客户端输入的键值
