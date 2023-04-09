@@ -19,6 +19,11 @@ tags:
 |uat|业务测试分支，sit分支测试完成后，再合到此分支进一步测试|
 |rel(release)|发布分支，在测试后确认没有bug后合并到此分支等待投产|
 
+## 公司项目拉下来后跑不下来原因
+
+一般公司都会对自己的项目设置很多东西，如npm的、gitLab的设置等，此时跑不下来是正常的
+，不要惊慌，向同事索要配置文档全部跑一遍就好了
+
 ## git push注意点
 
 当项目拉下来后，npm i后会导致很多文件被改变，当我们开发完成后，一定要对所有已修改文件选择性暂存。
@@ -50,7 +55,14 @@ git push --set-upstream origin "your ref branch"
 
 ## gitHub push 404 or connection error
 
-`git config --global http.sslverify false`
+1. `git config --global http.sslverify false`
+
+2. 保证连接的远程存储库是SSH类型的
+
+* HTTPS类型 如 `git@github.com:codeLove9/myBlog.git` 的是以互联网形式进行push的，大多数情况下需要很好的网络（科学上网工具）才能保证push的上去
+* SSH类型 如 `https://github.com/codeLove9/myBlog.git` 是另外一种协议，类似于直连，可以不受当前网络的影响，大大增加push成功率
+
+> 如果链接SSH仓库失败，就是当前本地没有配置SSH密钥，配置的具体方案见此 [服务器上的 Git - 生成 SSH 公钥](https://git-scm.com/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5)
 
 ## 修改git已提交的commit中提交者的用户名和邮箱
 
