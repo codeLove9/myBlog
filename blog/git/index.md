@@ -139,3 +139,44 @@ rm -rf test01.git
 >
 > 1. `git clone --bare` 没有clone项目的全部文件,所以修改完用户名和邮箱,可以直接清理掉
 > 2. 如果本地之前有clone过完整项目,建议直接清理掉,再重新clone.(我一开始直接pull,再push,发现本地历史记录又覆盖了之前修改的用户名和邮箱,清理掉,直接重新clone,就没有问题了)
+
+## 本地dist文件夹部署到gh-pages
+
+### 背景
+
+之前部署的方案是每次都要在项目外部重新再建一个夹子，把项目里打包好的文件都复制替换掉，再push到远端，但是这样做每次都显得很麻烦，我就在思考有没有什么方便的方法
+
+### 解决方案
+
+后来我发现了用shell脚本可以解决这个问题，只需要在项目里建一个.sh文件（一般命名为deploy.sh），需要部署的时候直接执行`bash deploy.sh`命令，就会自动把dist文件下的所有文件推送到远端gh-pages分支下，省时又省力，彷佛一下子打开了新世界的大门！！
+
+下面贴出.sh脚本文件的代码段
+
+```shell
+# 1.运行命令： bash deploy.sh
+# 2. 在vsCode终端或者cmd中运行会抛出错误
+# 3. 需要在powerShell或者gitBash中运行
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+npm run blog:build
+
+# 进入生成的文件夹
+cd blog/.vuepress/dist
+
+# 提交到git本地暂存区
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:codeLove9/myBlog.git master:gh-pages
+
+# 回到原来的目录
+cd -
+```
