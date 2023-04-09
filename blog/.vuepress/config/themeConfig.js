@@ -2,6 +2,7 @@ module.exports = {
   siteName: "XiaoChen's Blog",
   logo: '/logo.jpg',
   siteDesc: '一个出生于1999年的Font End Web开发程序员',
+  // 左侧sideBar导航栏
   nav: [
     { text: '🏠 Home', link: '/' },
     {
@@ -82,7 +83,7 @@ module.exports = {
   ],
   copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" href="https://github.com/codeLove9">Xiao Chen</a>`,
   blog: {
-    // TODO：主配置目录
+    // 开启目录页配置（主）
     directories: [
       {
         id: 'post',
