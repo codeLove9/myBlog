@@ -1,4 +1,5 @@
 const path = require('path')
+
 module.exports = (options, { themeConfig }) => {
   /**
    * Default theme configuration
@@ -79,7 +80,7 @@ module.exports = (options, { themeConfig }) => {
       '@vuepress/blog',
       themeConfig.blog || {
         directories: [
-          // TODO：配置目录
+          // 开启目录页配置（副）
           {
             id: 'post',
             dirname: '_post',
@@ -176,6 +177,18 @@ module.exports = (options, { themeConfig }) => {
     ['vuepress-plugin-seo', themeConfig.seo || false],
     ['@vuepress/pwa', themeConfig.pwa || false],
     ['one-click-copy', themeConfig.copy || false],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // Don't forget to install moment yourself
+          const moment = require('moment')
+          moment.locale(lang)
+          // return moment(timestamp).fromNow()
+          return { time: moment(timestamp).format('YYYY-MM-DD HH:SS'), fromNow: moment(timestamp).fromNow() }
+        }
+      }
+    ],
     require('./plugin/demo-code'),
     require('./plugin/theme-utils'),
     require('./plugin/float-menu')
