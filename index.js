@@ -185,7 +185,7 @@ module.exports = (options, { themeConfig }) => {
           const moment = require('moment')
           moment.locale(lang)
           // return moment(timestamp).fromNow()
-          return { time: moment(timestamp).format('YYYY-MM-DD HH:SS'), fromNow: moment(timestamp).fromNow() }
+          return { time: moment(timestamp).format('dddd YYYY/MM/DD, HH:mm:ss A'), fromNow: moment(timestamp).fromNow() }
         }
       }
     ],
