@@ -33,11 +33,12 @@
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-mark": "^3.0.1",
     "markdown-it-task-lists": "^2.1.1",
+    "moment": "^2.29.4",
+    "valine": "^1.4.14",
     "vuepress": "^1.7.1",
     "vuepress-plugin-flowchart": "^1.4.3",
-    "vuepress-plugin-seo": "^0.1.4",
     "vuepress-plugin-one-click-copy": "^1.0.2",
-    "valine": "^1.4.14"
+    "vuepress-plugin-seo": "^0.1.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
