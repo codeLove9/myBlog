@@ -12,6 +12,7 @@ tags:
 <!-- more -->
 
 ## 核心实现思路
+
 开始设置一个变量var flag = true；
 
 `if (flag) { flag = false;  do something }`   // 关闭水龙头
@@ -19,6 +20,7 @@ tags:
 利用回调函数等动画执行完毕，flag = true；       //打开水龙头
 
 ## 实现代码段
+
 ```js
 // flag 节流阀
 var flag = true;

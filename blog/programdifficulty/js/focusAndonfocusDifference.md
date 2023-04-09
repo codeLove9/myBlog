@@ -15,7 +15,7 @@ focus() 是方法,表示是去触发使其获得焦点。
 
 案例：当键盘按下ASCII码83（对应键盘s），鼠标光标会定到输入框内。
 
-```
+```js
 <body>
     <input type="text">
     <script>
