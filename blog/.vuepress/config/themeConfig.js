@@ -244,11 +244,11 @@ module.exports = {
       }
     ],
     sitemap: {
-      // hostname: 'https://80shuo.com',
+      hostname: 'https://codelove9.github.io/myBlog/',
       exclude: ['/404.html']
     },
     feed: {
-      canonical_base: 'http://80shuo.com'
+      canonical_base: 'https://codelove9.github.io/myBlog/'
     },
     // 访客主题配色自定义
     palette: {

@@ -21,7 +21,7 @@ module.exports = {
   themeConfig: {
     // 网站logo
     logo: '/logo.jpg',
-    hostname: 'https://80shuo.com'
+    hostname: 'https://codelove9.github.io/myBlog/'
   }
 }
 ```
@@ -111,6 +111,7 @@ module.exports = {
   }
 }
 ```
+
 ## Reward
 
 设置文章底部的打赏功能。
@@ -346,7 +347,6 @@ module.exports = {
     }
 }
 ```
-
 
 ## See also
 

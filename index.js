@@ -189,6 +189,12 @@ module.exports = (options, { themeConfig }) => {
         }
       }
     ],
+    [
+      'sitemap',
+      {
+        hostname: 'https://codelove9.github.io/myBlog/'
+      }
+    ],
     require('./plugin/demo-code'),
     require('./plugin/theme-utils'),
     require('./plugin/float-menu')
