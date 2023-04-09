@@ -27,7 +27,9 @@ tags:
 
 第一种解决方案：是给push和replace方法，传入相应的成功的回调与失败的回调
 
+```vue
 this.$router.push({name:"search",params:{keyword:this.keyword},query:{this.keyword.toUpperCase()}},()=>{},()=>{})
+```
 
 第一种解决方案可以暂时解决当前问题，治标不治本，但是以后再用push|replace还是会出现类似现象，因此我们需要从‘根’治病；
 
