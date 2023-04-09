@@ -7,6 +7,8 @@ tags:
   - Vue
 ---
 
+## 错误示例
+
 尝试在 package.json 里面设置自动打开浏览器
 
 ```package.json
@@ -25,7 +27,7 @@ module.exports = defineConfig({
 
 ![image](https://img-blog.csdnimg.cn/img_convert/e3caa2f97f1cb598edfb65406f1731d7.jpeg)
 
- 解决办法：
+## 解决办法
 
 在 项目文件夹下的 vue.config.js 里面添加这段代码
 
