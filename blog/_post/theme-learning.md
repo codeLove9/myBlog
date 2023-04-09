@@ -1,5 +1,5 @@
 ---
-date: 2020-1-26
+date: 2020-01-26
 title: 从零开始制作VuePress主题
 category: theme
 cover: /images/screenshot.webp

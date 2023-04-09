@@ -1,5 +1,5 @@
 ---
-date: 2023-1-26
+date: 2023-01-26
 category: frontend
 title: 浏览器端不用第三方包也可以获取md5值
 ---
@@ -22,6 +22,7 @@ title: 浏览器端不用第三方包也可以获取md5值
 ### atob和btoa
 
 ## 关键代码
+
 ``` js {5}
 // 将reader方法封装成Promisify 
 async readFileData(fileReader, file) {
