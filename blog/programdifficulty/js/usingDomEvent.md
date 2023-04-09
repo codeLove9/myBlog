@@ -12,6 +12,7 @@ tags:
 <!-- more -->
 
 ## 回调函数代码段
+
 ```js
  rightBtn.addEventListener('click', function() {
     if(num == ul.children.length - 1) {
@@ -28,8 +29,8 @@ tags:
 })
 ```
 
-
 ## 手动调用右箭头按钮点击事件
+
 ```js
 var timer = setInterval(function() {
         rightBtn.click();               //手动调用右按钮点击事件
