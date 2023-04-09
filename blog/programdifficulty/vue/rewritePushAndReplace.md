@@ -9,7 +9,9 @@ tags:
 
 > 编程式导航路由跳转到当前路由(参数不变), 多次执行会抛出NavigationDuplicated的警告错误？
 
-问题：编程式导航[路由跳转](https://so.csdn.net/so/search?q=%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC&spm=1001.2101.3001.7020)到当前路由(参数不变), 多次执行会抛出NavigationDuplicated的警告错误？
+## 问题
+
+编程式导航[路由跳转](https://so.csdn.net/so/search?q=%E8%B7%AF%E7%94%B1%E8%B7%B3%E8%BD%AC&spm=1001.2101.3001.7020)到当前路由(参数不变), 多次执行会抛出NavigationDuplicated的警告错误？
 
 注意：编程式导航（push|replace）才会有这种情况的异常，声明式导航是没有这种问题，因为声明式导航内部已经解决这种问题。
 
@@ -21,15 +23,13 @@ tags:
 
 由于[vue-router](https://so.csdn.net/so/search?q=vue-router&spm=1001.2101.3001.7020)最新版本3.5.2，引入了promise，push、replace方法会返回一个Promise。当传递参数多次且重复，或是没有写成功或失败的回调。会抛出异常，因此出现上面现象
 
-\=======================================================================
+## 解决方案
 
 第一种解决方案：是给push和replace方法，传入相应的成功的回调与失败的回调
 
 this.$router.push({name:"search",params:{keyword:this.keyword},query:{this.keyword.toUpperCase()}},()=>{},()=>{})
 
 第一种解决方案可以暂时解决当前问题，治标不治本，但是以后再用push|replace还是会出现类似现象，因此我们需要从‘根’治病；
-
-\=======================================================================
 
 第二种解决方案：重写$router的push和replace方法
 
