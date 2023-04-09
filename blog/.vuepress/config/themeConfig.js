@@ -243,10 +243,10 @@ module.exports = {
         }
       }
     ],
-    sitemap: {
+   /*  sitemap: {
       hostname: 'https://codelove9.github.io/myBlog/',
       exclude: ['/404.html']
-    },
+    }, */
     feed: {
       canonical_base: 'https://codelove9.github.io/myBlog/'
     },
