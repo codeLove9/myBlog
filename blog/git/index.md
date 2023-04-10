@@ -97,10 +97,13 @@ git config user.email
 
 ```git
 #!/bin/sh
+
 git filter-branch --env-filter '
+
 OLD_EMAIL="jincheng@test.com"
 CORRECT_NAME="jincheng"
 CORRECT_EMAIL="jincheng_921@163.com"
+
 if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
 then
 export GIT_COMMITTER_NAME="$CORRECT_NAME"
@@ -111,7 +114,8 @@ then
 export GIT_AUTHOR_NAME="$CORRECT_NAME"
 export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
 fi
-' --tag-name-filter cat -- --branches --tags` 
+' --tag-name-filter cat -- --branches --tags
+
 ```
 
 执行后,如下图绿色框中的输出,如果项目本身提交次数很多,则需要等待全部执行完成
