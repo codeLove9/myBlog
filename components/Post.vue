@@ -36,14 +36,14 @@
                  itemprop="articleBody" />
         <div class="article-copyright">
           <ul>
-            <!-- <li class="article-copyright__item">
+            <li class="article-copyright__item">
               <strong class="article-copyright__title">Last-updated<span>:</span></strong>
               <p class="article-copyright__text">{{lastUpdated}}</p>
             </li>
             <li class="article-copyright__item">
               <strong class="article-copyright__title">fromNow<span>:</span></strong>
               <p class="article-copyright__text">{{fromNow}}</p>
-            </li> -->
+            </li>
             <li class="article-copyright__item">
               <strong class="article-copyright__title">author<span>:</span></strong>
               <p class="article-copyright__text">XiaoChen</p>
@@ -101,15 +101,15 @@ export default {
       return `${this.$themeConfig.hostname}${this.$page.path}`
     },
     // 最近更新时间
-    // lastUpdated() {
-    //   const { time } = this.$page.lastUpdated
-    //   return time
-    // },
-    // // 距离现在的时间
-    // fromNow() {
-    //   const { fromNow } = this.$page.lastUpdated
-    //   return fromNow
-    // }
+    lastUpdated() {
+      const { time } = this.$page.lastUpdated
+      return time
+    },
+    // 距离现在的时间
+    fromNow() {
+      const { fromNow } = this.$page.lastUpdated
+      return fromNow
+    }
   }
 }
 </script>
