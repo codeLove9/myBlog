@@ -83,4 +83,11 @@ Echarts折线图颜色分段优化，查阅官网API
 
 ## 增加收藏图标并增加交互逻辑
 
-等待补充
+1. 图标的展示用v-if来动态地加载图片，判断条件用两个三元表达式内嵌起来，分为已收藏图片（true），未收藏图片（false），跳动的动图（null）
+2. 点击收藏时，先加载动图再加载已收藏图片，取消收藏时，直接加载未收藏图片
+3. 点击后先给Isfavorite字段设置对应图片的值，再发起请求修改收藏状态，以得到的相应信息判断是给成功的toast提示还是失败的弹窗
+4. 发请求前先调用自定义事件`this.$emit('updateCollectionList')`
+5. ProductList组件中在data中创建一个`collectionList`的数组用来存储收藏列表
+6. ProductList组件接收自定义事件并在methods中定义一个自定义事件的回调函数，函数中调用查询收藏列表的接口，返回值赋值给`collectionList`
+7. watch中监听collectionList的变化，一但变化了就拿collectionList的productId和存储所有产品的listData中的productId作比较，如果全等了，修改收藏值为true，反之则为false
+8. 在Matrix组件中给ProductList组件打上ref，在created钩子中使用封装的ViewWillAppear方法，在返回页面的时候直接调用`this.refs.productList.updateCollectionList`来刷新响应值
