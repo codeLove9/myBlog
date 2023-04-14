@@ -4,7 +4,7 @@ title: git实战总结
 cover: /images/git.png
 category: frontend
 tags:
-  - GIT
+  - Git
 ---
 
 # 在进入公司里的第一件事就是拉代码，可见git的重要性。在此我特别记录一些我在开发中和工作中遇到的坑，以示警戒
