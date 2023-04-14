@@ -1,1 +1,1 @@
-export default ['/programdemand/', '/git/', '/personalInformation/']
+export default ['/programdemand/', '/git/', '/personalInformation/', '/interview/']

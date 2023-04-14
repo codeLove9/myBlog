@@ -25,7 +25,7 @@ const HomePagetypeList = ['/', '/studyprogress/htmlcss/', '/studyprogress/js/', 
 const pidList = ['post', 'studyprogresshtmlcss', 'studyprogressjs', 'studyprogressvue', 'studyprogressreact', 'studyprogressuniapp', 'programdifficultyhtmlcss', 'programdifficultyjs', 'programdifficultyvue', 'programdifficultyreact', 'programdifficultyuniapp']
 
 // 定义路由path列表,展示文章字数和时间
-const pathList = ['/programdemand/', '/git/', '/personalInformation/']
+const pathList = ['/programdemand/', '/git/', '/personalInformation/', '/interview/']
 
 module.exports = (options = {}, context) => ({
   name: 'maker-theme-utils',

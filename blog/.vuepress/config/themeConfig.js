@@ -59,6 +59,7 @@ module.exports = {
       ]
     },
     { text: '💐 git', link: '/git/' },
+    { text: '📋 interview', link: '/interview/' },
     { text: '🔗 Personal Information', link: '/personalInformation/' }
   ],
   searchPlaceholder: 'Search',
@@ -243,7 +244,7 @@ module.exports = {
         }
       }
     ],
-   /*  sitemap: {
+    /*  sitemap: {
       hostname: 'https://codelove9.github.io/myBlog/',
       exclude: ['/404.html']
     }, */
