@@ -83,6 +83,12 @@ export default {
     PostNav,
     Reward
   },
+  data() {
+    return {
+      lastUpdated: '',
+      fromNow: ''
+    }
+  },
   computed: {
     isShowReward() {
       if (this.$frontmatter.reward === false) {
@@ -99,17 +105,12 @@ export default {
     },
     pageLink() {
       return `${this.$themeConfig.hostname}${this.$page.path}`
-    },
-    // 最近更新时间
-    lastUpdated() {
-      const { time } = this.$page.lastUpdated
-      return time
-    },
-    // 距离现在的时间
-    fromNow() {
-      const { fromNow } = this.$page.lastUpdated
-      return fromNow
     }
+  },
+  mounted() {
+    const { time, fromNow } = this.$page.lastUpdated
+    this.lastUpdated = time
+    this.fromNow = fromNow
   }
 }
 </script>
