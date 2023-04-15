@@ -1,7 +1,7 @@
 ---
 date: 2023-04-14
 title: 面试总结
-# cover: /images/git.png
+cover: /images/interview.jpg
 category: frontend
 tags:
   - Interview
