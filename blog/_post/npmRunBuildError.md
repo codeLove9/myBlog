@@ -14,7 +14,7 @@ tags:
 
 今天写好新的md文件时，npm run serve运行起来没有问题，于是我commit到本地后npm run build打包，可是却报错了，报错图片如下
 
-![image](/blogImages/BuildFail.png)
+![image](/myBlog/blogImages/BuildFail.png)
 
 提示`Error in render: "TypeError: Cannot destructure property 'time' of 'this.$page.lastUpdated' as it is undefined."`，然后让我在Post组件里找
 
@@ -61,4 +61,4 @@ mounted() {
 
 问题解决！ 成功截图如下：
 
-![image](/blogImages/buildSuccess.png)
+![image](/myBlog/blogImages/buildSuccess.png)
