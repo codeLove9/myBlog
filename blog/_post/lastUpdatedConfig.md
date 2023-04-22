@@ -1,6 +1,6 @@
 ---
 date: 2023-04-12
-title: VuePress内置计算属性this.$page.lastUpdated的注意点
+title: VuePress内置计算属性this.$page.lastUpdated由于没有git commit记录在npm run serve时报错
 category: theme
 tags:
   - VuePress

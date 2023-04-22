@@ -1,6 +1,6 @@
 ---
 date: 2023-04-15
-title: npm run build打包报错
+title: 由于获取不到内置计算属性this.$page.lastUpdated引起的npm run build打包报错
 category: theme
 tags:
   - VuePress
