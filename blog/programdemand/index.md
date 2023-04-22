@@ -2,6 +2,7 @@
 date: 2023-04-02
 title: It is always a pleasure to greet a friend from afar ~
 cover: /images/demand.png
+category: Demand
 ---
 
 > 项目实战中的需求总结

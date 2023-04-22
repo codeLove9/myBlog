@@ -2,14 +2,12 @@
 date: 2023-04-14
 title: 面试总结
 cover: /images/interview.jpg
-category: frontend
-tags:
-  - Interview
+category: Interview
 ---
 
-# 面试遇到有价值的问题总结，并带着自己的一些思考记录下来
+## 面试遇到有价值的问题总结，并带着自己的一些思考记录下来
 
-## JS原型和原型链
+### JS原型和原型链
 
 ```js
 // 创建构造函数
