@@ -7,7 +7,7 @@ tags:
   - Git
 ---
 
-# 在进入公司里的第一件事就是拉代码，可见git的重要性。在此我特别记录一些我在开发中和工作中遇到的坑，以示警戒
+## 在进入公司里的第一件事就是拉代码，可见git的重要性。在此我特别记录一些我在开发中和工作中遇到的坑，以示警戒
 
 ## 公司里的分支结构
 
@@ -73,24 +73,24 @@ git push --set-upstream origin "your ref branch"
 修改为正确的用户名:`jincheng`,正确的邮箱:`jincheng_921@163.com`
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210714150220957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppbmNoZW5nXzkyMQ==,size_16,color_FFFFFF,t_70#pic_center)
 
-# 步骤
+### 步骤
 
-1. 打开`git bash here` 客户端
-2. 复制需要修改的项目的git地址
+1.打开`git bash here` 客户端
+2.复制需要修改的项目的git地址
 
 ```git
 git clone --bare https://gitee.com/xxxx/test01.git(这里替换成自己的git地址)
 cd test01.git (clone完成后,进入项目目录)`
 ```
 
-3. 建议执行以下命令,查看当前的git提交后的用户名和邮箱
+3.建议执行以下命令,查看当前的git提交后的用户名和邮箱
 
 ```git
 git config user.name
 git config user.email
 ```
 
-4. 复制脚本,并修改成自己的信息,粘贴到`git bash here`客户端中,按enter执行  
+4.复制脚本,并修改成自己的信息,粘贴到`git bash here`客户端中,按enter执行  
     `OLD_EMAIL`:原来的邮箱名称,这里我的是`jincheng@test.com`  
     `CORRECT_NAME`:新的用户名称,我自己的是`jincheng`  
     `CORRECT_EMAIL`:新的邮箱,`jincheng_921@163.com`
@@ -121,7 +121,7 @@ fi
 执行后,如下图绿色框中的输出,如果项目本身提交次数很多,则需要等待全部执行完成
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210714152244206.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppbmNoZW5nXzkyMQ==,size_16,color_FFFFFF,t_70#pic_center)  
-5\. 上一条脚本信息执行完成后,执行一下git命令
+5.上一条脚本信息执行完成后,执行一下git命令
 
 ```git
 git push --force --tags origin 'refs/heads/*'
@@ -132,7 +132,7 @@ git push --force --tags origin 'refs/heads/*'
 
 git服务端也修改成功  
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210714153233898.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppbmNoZW5nXzkyMQ==,size_16,color_FFFFFF,t_70#pic_center)  
-6\. 清理本地信息
+6.清理本地信息
 
 ```git
 cd ..
