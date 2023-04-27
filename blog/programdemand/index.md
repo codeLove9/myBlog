@@ -92,3 +92,10 @@ Echarts折线图颜色分段优化，查阅官网API
 6. ProductList组件接收自定义事件并在methods中定义一个自定义事件的回调函数，函数中调用查询收藏列表的接口，返回值赋值给`collectionList`
 7. watch中监听collectionList的变化，一但变化了就拿collectionList的productId和存储所有产品的listData中的productId作比较，如果全等了，修改收藏值为true，反之则为false
 8. 在Matrix组件中给ProductList组件打上ref，在created钩子中使用封装的ViewWillAppear方法，在返回页面的时候直接调用`this.refs.productList.updateCollectionList`来刷新响应值
+
+## 备用域名容灾需求
+
+1. 发交易获取服务端返回的query地址
+2. 在服务组件中调用获取域名的方法
+3. 在请求返回时或者是dom展示是拼接路径，成为完整的url
+4. 手机查询ipv6支持，手动设置dns，对备用域名情况下的进行测试
