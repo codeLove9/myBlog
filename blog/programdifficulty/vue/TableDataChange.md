@@ -4,7 +4,7 @@ date: 2023-04-30
 author: XiaoChen
 category: frontend
 tags:
-  - Vue
+  - Element UI
 ---
 
 ## 场景
