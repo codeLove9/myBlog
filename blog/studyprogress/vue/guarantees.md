@@ -15,22 +15,22 @@ tags:
 
 ```vue
 // 多层解构得到name并重命名为Label
-const { resBody：{ productName：productLable } = {} } = ajax()
+const { resBody：{ productName：productLable } } = ajax()
+
+use productLable do something....
 ```
 
 可以说是直接莽，根本不考虑ajax请求失败的情况
 
-## 加上兜底
+## 用Promise.catch加上兜底
 
 ```vue
-const { resBody：{ productName：productLabel } = {} } = ajax().catch(e => '')
+const { resBody：{ productName：productLabel } } = ajax().catch(e => '')
 ```
 
 发生异常时抛出空字符串给productLabel,当我自信满满的提交代码时，被告知左边也要兜底
 
-## 双兜底后
-
-### 一开始的错误代码
+## 双兜底前的错误代码
 
 ```vue
 const { resBody：{product：{name：Label = '理财2号' } } } = ajax().catch(e => '')
@@ -43,7 +43,7 @@ const { resBody：{product：{name：Label = '理财2号' } } } = ajax().catch(e
 在控制台里打印如下代码可以看到
 
 ```js
-const { a:{ b: c = 3 } } = {}
+const { a: { b: c = 3 } } = {}
 console.log(c)   // TypeError: Cannot read properties of undefined (reading 'b')
 ```
 
@@ -69,16 +69,16 @@ const { a: { b } } = { a: {} }
 console.log(b) // undefined
 ```
 
-可以看出，a是空对象，a.b打印undefined。想要不报错，那么b的上一层不能为undefined，至少是个空对象或是没有b的对象。
+可以看出，a是空对象，a.b打印undefined。想要不报错，那么b的上一层a不能为undefined，a必须是个对象，对象里有没有值不会影响。
 
-那如果要取值的上一层没有呢？我们尝试一下
+那如果取值的上一层没有呢？我们尝试一下
 
 ```js
 const { a: { b: { c } } } = { a: {} }
 console.log(c) // TypeError: Cannot read properties of undefined (reading 'c')
 ```
 
-很显然，我们想拿到c，那么至少c的上一次b得是个空对象，但是右边只声明了a是个空对象，所以报错了
+很显然，我们想拿到c，那么至少c的上一次b得是个对象，但是右边只声明了a是个空对象，此时想拿到c，那么a中必须有b这个对象，但是却没有，所以报错了
 
 **这时我们就需要给b那层做一层兜底了。**
 
