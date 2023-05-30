@@ -18,4 +18,4 @@ age: 24
 gender: male  
 hometown: HuBei  
 profession: Web Front-end development programmer  
-ability: **Vue2, Vue3 ,Vuex, Vue-router, React, Redux,. React-router**
+ability: **Vue2, Vue3 ,Vuex, Pinia, Vue-router, React, Redux,. React-router**
