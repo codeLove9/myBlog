@@ -19,10 +19,38 @@ const wordcount = function (content) {
 
 // BUG： 此文件下一引入公共js文件就报错，只能再次定义一次，不知道原因
 // 定义Pagetype返回值为home的数组，展示目录结构
-const HomePagetypeList = ['/', '/studyprogress/htmlcss/', '/studyprogress/js/', '/studyprogress/vue/', '/studyprogress/react/', '/studyprogress/uniapp/', '/programdifficulty/htmlcss/', '/programdifficulty/js/', '/programdifficulty/vue/', '/programdifficulty/react/', '/programdifficulty/uniapp/']
+const HomePagetypeList = [
+  '/',
+  '/studyprogress/htmlcss/',
+  '/studyprogress/js/',
+  '/studyprogress/ts/',
+  '/studyprogress/vue/',
+  '/studyprogress/react/',
+  '/studyprogress/uniapp/',
+  '/programdifficulty/htmlcss/',
+  '/programdifficulty/js/',
+  '/programdifficulty/ts/',
+  '/programdifficulty/vue/',
+  '/programdifficulty/react/',
+  '/programdifficulty/uniapp/'
+]
 
 // 定义pid列表,展示文章字数和时间
-const pidList = ['post', 'studyprogresshtmlcss', 'studyprogressjs', 'studyprogressvue', 'studyprogressreact', 'studyprogressuniapp', 'programdifficultyhtmlcss', 'programdifficultyjs', 'programdifficultyvue', 'programdifficultyreact', 'programdifficultyuniapp']
+const pidList = [
+  'post',
+  'studyprogresshtmlcss',
+  'studyprogressjs',
+  'studyprogressts',
+  'studyprogressvue',
+  'studyprogressreact',
+  'studyprogressuniapp',
+  'programdifficultyhtmlcss',
+  'programdifficultyjs',
+  'programdifficultyts',
+  'programdifficultyvue',
+  'programdifficultyreact',
+  'programdifficultyuniapp'
+]
 
 // 定义路由path列表,展示文章字数和时间
 const pathList = ['/programdemand/', '/git/', '/personalInformation/', '/interview/']

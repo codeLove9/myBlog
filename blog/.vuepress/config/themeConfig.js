@@ -18,6 +18,10 @@ module.exports = {
           link: '/studyprogress/js/'
         },
         {
+          text: 'TS',
+          link: '/studyprogress/ts/'
+        },
+        {
           text: 'Vue',
           link: '/studyprogress/vue/'
         },
@@ -43,6 +47,10 @@ module.exports = {
         {
           text: 'JS',
           link: '/programdifficulty/js/'
+        },
+        {
+          text: 'TS',
+          link: '/studyprogress/ts/'
         },
         {
           text: 'Vue',
@@ -124,6 +132,18 @@ module.exports = {
         }
       },
       {
+        id: 'studyprogressts',
+        dirname: 'studyprogress/ts',
+        path: '/studyprogress/ts/',
+        itemPermalink: '/studyprogress/ts/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
         id: 'studyprogressvue',
         dirname: 'studyprogress/vue',
         path: '/studyprogress/vue/',
@@ -176,6 +196,18 @@ module.exports = {
         dirname: 'programdifficulty/js',
         path: '/programdifficulty/js/',
         itemPermalink: '/programdifficulty/js/:year/:month/:day/:slug.html',
+        frontmatter: { title: '' },
+        pagination: {
+          perPagePosts: 10,
+          prevText: '',
+          nextText: ''
+        }
+      },
+      {
+        id: 'programdifficultyts',
+        dirname: 'programdifficulty/ts',
+        path: '/programdifficulty/ts/',
+        itemPermalink: '/programdifficulty/ts/:year/:month/:day/:slug.html',
         frontmatter: { title: '' },
         pagination: {
           perPagePosts: 10,

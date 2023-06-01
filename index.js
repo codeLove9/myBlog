@@ -115,6 +115,17 @@ module.exports = (options, { themeConfig }) => {
             }
           },
           {
+            id: 'studyprogressts',
+            dirname: 'studyprogress/ts',
+            path: '/studyprogress/ts/',
+            itemPermalink: '/studyprogress/ts/:year/:month/:day/:slug.html',
+            pagination: {
+              perPagePosts: 10,
+              prevText: '',
+              nextText: ''
+            }
+          },
+          {
             id: 'studyprogressvue',
             dirname: 'studyprogress/vue',
             path: '/studyprogress/vue/',
