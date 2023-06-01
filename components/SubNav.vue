@@ -1,18 +1,18 @@
 <template>
-    <div class="theme-SubNav">
-      <RouterLink class="theme-SubNav__item" :class="{'theme-SubNav__item--active': $page.pageType === 'archive'}" to="/archives/">
-        <span class="theme-SubNav__count">{{archivesCount}}</span>
-        <span class="theme-SubNav__name">Archives</span>
-      </RouterLink>
-      <RouterLink class="theme-SubNav__item" :class="{'theme-SubNav__item--active': ['category', 'categoryItem'].includes($page.pageType)}" to="/categories/">
-        <span class="theme-SubNav__count">{{$category.length}}</span>
-        <span class="theme-SubNav__name">Categories</span>
-      </RouterLink>
-      <RouterLink class="theme-SubNav__item" :class="{'theme-SubNav__item--active': ['tag', 'tagItem'].includes($page.pageType)}" to="/tags/">
-        <span class="theme-SubNav__count">{{$tag.length}}</span>
-        <span class="theme-SubNav__name">Tags</span>
-      </RouterLink>
-    </div>
+  <div class="theme-SubNav">
+    <RouterLink class="theme-SubNav__item" :class="{ 'theme-SubNav__item--active': $page.pageType === 'archive' }" to="/archives/">
+      <span class="theme-SubNav__count">{{ archivesCount }}</span>
+      <span class="theme-SubNav__name">Archives</span>
+    </RouterLink>
+    <RouterLink class="theme-SubNav__item" :class="{ 'theme-SubNav__item--active': ['category', 'categoryItem'].includes($page.pageType) }" to="/categories/">
+      <span class="theme-SubNav__count">{{ $category.length }}</span>
+      <span class="theme-SubNav__name">Categories</span>
+    </RouterLink>
+    <RouterLink class="theme-SubNav__item" :class="{ 'theme-SubNav__item--active': ['tag', 'tagItem'].includes($page.pageType) }" to="/tags/">
+      <span class="theme-SubNav__count">{{ $tag.length }}</span>
+      <span class="theme-SubNav__name">Tags</span>
+    </RouterLink>
+  </div>
 </template>
 <script>
 import pidList from '../util/pidList'
@@ -23,8 +23,8 @@ export default {
       let list = this.$site.pages.filter(item => {
         // return item.pid === 'post';
         return ~pidList.indexOf(item.pid)
-      });
-      return list.length;
+      })
+      return list.length
     }
   }
 }
@@ -97,5 +97,4 @@ export default {
       transform-origin: bottom center;
     &:link,&:visited,&:active,&:hover
       color #fff
-    
 </style>
