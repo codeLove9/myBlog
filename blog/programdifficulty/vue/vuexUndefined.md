@@ -1,5 +1,5 @@
 ---
-title: vuex中state或getters初始返回值为undefined引起的渲染错误:“TypeError:无法读取未定义的属性(读取‘XXX等‘)“
+title: vuex中state或getters因为请求加载缓慢或者异常导致的初始返回值为undefined引起的渲染错误:“TypeError:无法读取未定义的属性(读取‘XXX等‘)“
 date: 2023-04-17
 author: XiaoChen
 category: frontend
@@ -44,7 +44,7 @@ export default{
 }
 ```
 
-可以看出 DetailList 是通过发送请求获取到的数据，而这个数据，当请求没有返回数据的时候初始状态是一个空的对象或者是数组 
+可以看出 DetailList 是通过发送请求获取到的数据，而这个数据，当请求没有返回数据的时候初始状态是一个空的对象或者是数组
 
 通过 getters 将 DetailList 中的数据提取出来，方便使用
 
@@ -71,8 +71,8 @@ computed:{
 
 ```vue
 categoryView(state){
-            return state.DetailList.categoryView || {}
-        },
+    return state.DetailList.categoryView || {}
+},
 ```
 
  在返回值后面 加一个 || ，当属性值为 undefined 时，会返回 || 后面的数据 ，这样就不会报错
