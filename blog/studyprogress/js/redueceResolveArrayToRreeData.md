@@ -1,5 +1,5 @@
 ---
-title: JS使用reduce实现扁平化数组转换为树形数据
+title: JS之巧妙利用对象的浅拷贝优化递归(包含reduce的学习)
 date: 2023-06-07
 author: XiaoChen
 category: frontend
@@ -97,21 +97,20 @@ let Arr = [
       return prev
     },{})
     // console.log(treeList)
-    let result = Arr.reduce((prev,cur)=>{
+    let result = Arr.reduce((prev, cur)=>{
       let pid = cur.parent_id;
-      // pid为0的就找不到父对象，找到当前cur的父对象
-      // 对象的浅拷贝，引用关系存在，在后面处理parent的时候也会导致cur的改变，达到递归的效果
+      // pid为0的就找不到父对象，找到当前, cur的父对象
+      // 对象的浅拷贝，引用关系存在，在后面处理parent的时候也会导致, cur的改变，达到递归的效果
       let parent = treeList[pid]
       // console.log(parent,1)
-      // 如果父对象存在，就将cur压到父对象的children属性中
+      // 如果父对象存在，就将, cur压到父对象的children属性中
       if(parent){
-        // parent和cur存在引用关系
+        // parent和, cur存在引用关系
         parent.children? parent.children.push(cur) : parent.children = [cur]
       } else if(pid === 0){
-        // 没有父对象，则此cur为树的根元素
-        prev.push(cur)
+        // 没有父对象，则此, cur为树的根元素
+        prev.push({...cur})
       }
       return prev
     },[])
-    // console.log(result)
 ```
