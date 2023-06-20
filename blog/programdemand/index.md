@@ -99,3 +99,9 @@ Echarts折线图颜色分段优化，查阅官网API
 2. 在服务组件中调用获取域名的方法
 3. 在请求返回时或者是dom展示是拼接路径，成为完整的url
 4. 手机查询ipv6支持，手动设置dns，对备用域名情况下的进行测试
+
+## 增加免责话术
+
+1. 在timeFormat函数中新增一个参数isConcatForest，默认值为false，作为开启阀
+2. 在template中把需要拼接的模块，传入参数true；不需要拼接的模块，不传值
+3. timeFormat函数中，只有isConcatForest && res.concat('免责话术')即可
