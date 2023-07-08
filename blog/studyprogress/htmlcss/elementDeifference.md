@@ -7,7 +7,7 @@ tags:
   - HTML/CSS
 ---
 
-# 1.**块元素**
+## 1.**块元素**
 
 *   总是在新行上开始；
     
@@ -51,17 +51,13 @@ tags:
 
 ## 如何实现元素转换：
 
-```
-`
+```css
+// 定义元素为块级元素 
+isplay：block
 
-1.  display：block ，定义元素为块级元素 
-    
-2.  display : inline ，定义元素为行内元素 
-    
-3.  display：inline-block，定义元素为行
-    
+// 定义元素为行内元素 
+display: inline
 
-`
-
-
+// 定义元素为行    
+display：inline-block
 ```

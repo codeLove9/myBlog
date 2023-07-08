@@ -13,37 +13,18 @@ tags:
 
 如：
 
-```
-`
-
-1.  .example {
-    
-2.     display: block;
-    
-3.     position: relative;
-    
-4.     float: left;
-    
-5.     width: 100px;
-    
-6.     height: 100px;
-    
-7.     margin: 0 auto;
-    
-8.     padding: 10px;
-    
-9.     font-family: Arial, Helvetica, sans-serif;
-    
-10.     color: #333;
-    
-11.     background: rgba(0, 0, 0, 5);
-    
-12.     border-radius: 10px;
-    
-13.    }
-    
-
-`
-
-
+```css
+.example {
+  display: block
+  position: relative
+  float: left
+  width: 100px
+  height: 100px
+  margin: 0 auto
+  padding: 10px
+  font-family: Arial, Helvetica, sans-serif
+  color: #333
+  background: rgba(0, 0, 0, 5)
+  border-radius: 10px
+}
 ```

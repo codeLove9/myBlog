@@ -8,11 +8,11 @@ tags:
 
  
 
-# 项目场景：
+## 项目场景：
 
 当我用background-image选择一张与浏览器宽高不匹配的背景图时，需要铺满整个浏览器。
 
-```
+```css
 body {
   background-image: url(../../全民出游季/images/f1_1.jpg) ; 
   background-repeat: no-repeat ;
@@ -24,7 +24,7 @@ body {
 
 * * *
 
-# 问题描述
+## 问题描述
 
 当我使用了background-repeat代码串选择不重复图片，再用background-size: cover代码串让图片填充覆盖整个浏览器，运行后发现并没有相应的效果，并且body的高度始终为0。
 
