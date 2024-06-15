@@ -4,7 +4,7 @@ date: 2023-04-23
 author: XiaoChen
 category: frontend
 tags:
-- Vue
+- JS
 ---
 
 > 在js中，object(对象)，是一个复杂数据类型，两者比较的是存储地址，所以一个对象怎么都不可能等于另外一个对象，应该比较对象的key
