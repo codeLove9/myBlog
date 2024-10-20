@@ -22,12 +22,39 @@ list点击事件触发
 外部被点击
 ```
 
-上方的打印日志为一次短距离快速滑动后触发的整个流程，由外部touchstart -> touchmove -> touchend ->列表click-外层click。应用项目均依赖了@quasar/fastclick，从而猜刻 fastclick对touchend和click事件做了处理。fastclick 的思路是，利用touch来模拟 tap触摸,如果判断为一次有效的tap，则在 touchend触发完成后立刻模拟-次click事件分发。
+上方的打印日志为一次短距离快速滑动后触发的整个流程，由外部touchstart -> touchmove -> touchend ->列表click-外层click。应用项目均依赖了@quasar/fastclick，从而猜刻 fastclick对touchend和click事件做了处理。</br>
+fastclick 的思路是，利用touch来模拟 tap触摸,如果判断为一次有效的tap，则在 touchend触发完成后立刻模拟一次click事件分发。
 
 ```js
 //fastclick.lib.js
+this.touchBoundary = options.touchBoundary || 10;
+
+FastClick.prototype.touchHasMoved = function(event) {
+  var touch = event.changedTouches[0], boundary = this.touchBoundary; 
+  // 如果移动距离大于10px才判定为移动了
+  if (Math.abs(touch.pageX - this.touchStartX) > boundary || Math.abs(touch.pageY - this.touchStartY) > boundary) {
+    return true;
+  }
+
+  return false;
+};
+
+FastClick.prototype.onTouchMove = function(event) {
+  if (!this.trackingClick) {
+    return true;
+  }
+
+  // If the touch has moved, cancel the click tracking
+  if (this.targetElement !== this.getTargetElementFromEventTarget(event.target) || this.touchHasMoved(event)) {
+    this.trackingClick = false;
+    this.targetElement = null;
+  }
+
+  return true;
+};
+
 Fastclick.prototype.onTouchEnd = function(event) {
-  if(!this.trackingClick) {  // 判断是否点点击标记，下面会讲
+  if(!this.trackingClick) {  // 判断是否是点击标记，下面会讲
     return true
   }
 }
@@ -48,4 +75,6 @@ if(!this.needsClick(targetElement)) {
 
 ## 解决方案
 
-根据源码和官网提示，当不想意外的触发模拟的点击事件，而交给原生页面去做，则在点击事件的元素上，添加`class="needClick"`事件，此时滑动和点击事件均正常触发。
+1. 根据源码和官网提示，当不想意外的触发模拟的点击事件，而交给原生页面去做，则在点击事件的元素上，添加`class="needClick"`事件，在范围内取消fastclick，此时滑动和点击事件均正常触发。
+
+2. this.touchBoundary数值不再设置成10px，再设置大一些即可。
