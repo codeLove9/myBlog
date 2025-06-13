@@ -88,6 +88,7 @@ export default {
     }
   }
 }
+</script>
 ```
 
 ## 总结
