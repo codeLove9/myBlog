@@ -1,0 +1,152 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "XiaoChen's Blog",
+    "home_page_url": "https://codelove9.github.io/myBlog/",
+    "feed_url": "https://codelove9.github.io/myBlog/feed.json",
+    "description": "A front-end programmer born in 1999",
+    "items": [
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2023/04/12/lastupdatedconfig.html",
+            "url": "https://codelove9.github.io/myBlog/post/2023/04/12/lastupdatedconfig.html",
+            "title": "VuePress内置计算属性this.$page.lastUpdated由于没有git commit记录在npm run serve时报错",
+            "summary": "\n写了新博客却出不来页面，调试工具丢出报错找不到this.$page.lastUpdated，这是为什么呢\n",
+            "date_modified": "2023-04-12T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2023/07/10/directory.html",
+            "url": "https://codelove9.github.io/myBlog/post/2023/07/10/directory.html",
+            "title": "markdown中的正文不能用一级标题，否则目录出不来",
+            "date_modified": "2023-07-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2023/01/26/md5.html",
+            "url": "https://codelove9.github.io/myBlog/post/2023/01/26/md5.html",
+            "title": "浏览器端不用第三方包也可以获取md5值",
+            "summary": "\n利益于JS的同构特性,crypto虽然是Node.js的自带模块,但同时也能用于Web浏览器端。\n",
+            "date_modified": "2023-01-26T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2023/02/23/icon.html",
+            "url": "https://codelove9.github.io/myBlog/post/2023/02/23/icon.html",
+            "title": "内置图标 (Icon字体)",
+            "date_modified": "2023-02-23T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2023/04/15/npmrunbuilderror.html",
+            "url": "https://codelove9.github.io/myBlog/post/2023/04/15/npmrunbuilderror.html",
+            "title": "由于获取不到内置计算属性this.$page.lastUpdated引起的npm run build打包报错",
+            "summary": "\nnpm run build打包报Error in render: &quot;TypeError: Cannot destructure property 'time' of 'this.$page.lastUpdated' as it is undefined.&quot;\n",
+            "image": "https://codelove9.github.io/myBlog/myBlog/blogImages/BuildFail.png",
+            "date_modified": "2023-04-15T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/03/30/theme-learning-archive.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/03/30/theme-learning-archive.html",
+            "title": "VuePress主题教程 -- Archive文章归档页",
+            "summary": "\n本篇我们来实现文章归档页,关键点还是涉及全局计算属性的运用,同时借助了相关插件api来动态生成归档页并注入页面类型。\n",
+            "image": "https://80shuo.com/images/learning/archive.png",
+            "date_modified": "2021-03-30T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/01/25/maker-page.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/01/25/maker-page.html",
+            "title": "Maker主题配置--页面配置",
+            "date_modified": "2021-01-25T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/01/23/maker-basic.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/01/23/maker-basic.html",
+            "title": "Maker主题配置--基本配置",
+            "summary": "涵盖基乎所有和主题相关配置项,帮助你快速开始搭建和配置Maker主题.",
+            "date_modified": "2021-01-23T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2023/01/01/theme-learning-concept.html",
+            "url": "https://codelove9.github.io/myBlog/post/2023/01/01/theme-learning-concept.html",
+            "title": "VuePress中的常用术语",
+            "date_modified": "2023-01-01T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/03/31/theme-learning-category.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/03/31/theme-learning-category.html",
+            "title": "VuePress主题教程 -- Category分类页",
+            "summary": "\n分类页和上一篇的归档页一样,都是方便检索文章博客的必备功能页,与之类似,我们同样是借助vuepress的extendPageData插件api动态注入页面类型,同时配合blog插件君的文档分类功能共同完成分类页。\n",
+            "image": "https://80shuo.com/images/learning/category.png",
+            "date_modified": "2021-03-31T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/02/24/theme-learning-directory.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/02/24/theme-learning-directory.html",
+            "title": "VuePress 主题目录结构",
+            "summary": "\n接上一篇,我们已经有了个能运行的简易站点,主题目录下仅包含了一个Layout.vue文件,从现在开始我们需要往里面添置东西让主题变得功能完备起来,以下是推荐的目录结构。\n",
+            "date_modified": "2021-02-24T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/03/17/theme-learning-footerbar.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/03/17/theme-learning-footerbar.html",
+            "title": "VuePress主题教程 -- FooterBar模板编写",
+            "summary": "\n接上一篇,我们完成剩下的用来放一些社交媒体链接及版权信息的FooterBar模板。本篇内容会比较简单,主要会利用vue的条件渲染对常用的链接类型进行区别适配,编写一个图标组件用来媒体图标的显示。版权信息之类的是用v-html指令接收,可以自己自定义任意的HTML。\n",
+            "image": "https://80shuo.com/images/learning/footerbar.png",
+            "date_modified": "2021-03-17T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/01/22/shell-tree.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/01/22/shell-tree.html",
+            "title": "【常用Shell命令】- tree",
+            "summary": "浏览博客文章时经常会看到一些很漂亮的目录结构,就像下面所示\nassets\n├── fonts\n│   ├── google\n│   │   ├── bbr.woff2\n│   │   └── sarpanch.woff2\n│   └── icomoon\n│       └── Icon.woff\n└── images\n    └── bg.png\n\n123456789",
+            "date_modified": "2021-01-22T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/02/23/theme-learning-guide.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/02/23/theme-learning-guide.html",
+            "title": "VuePress 主题介绍",
+            "date_modified": "2021-02-23T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/02/26/theme-learning-home.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/02/26/theme-learning-home.html",
+            "title": "Home 模板文件编写",
+            "summary": "\n从本篇开始我们将引入官方的 vuepress-plugin-blog 插件, blog插件封装了一系列实用功能, 用它来做博客的自定义主题可以省心不少。\n",
+            "image": "https://80shuo.com/images/learning/home.png",
+            "date_modified": "2021-02-26T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/03/03/theme-learning-nav.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/03/03/theme-learning-nav.html",
+            "title": "VuePress 主题教程 -- NavBar 模板文件编写",
+            "summary": "\n导航模块是博客站点必备的一个元素,我们将参考VuePress默认主题来实现导航模块。\n",
+            "image": "https://80shuo.com/images/learning/navbar.png",
+            "date_modified": "2021-03-03T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/03/11/theme-learning-subnav.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/03/11/theme-learning-subnav.html",
+            "title": "VuePress主题教程 --SubNav模板编写",
+            "summary": "\nSideBar是一个复合模板, FooterBar,NavBar, SubNav均包含在里面, 我们已经完成了NavBar, 剩下的SubNav是对站点的分类、标签及文章的简易统计和快速入口,FooterBar是用来放一些社交媒体链接及版权信息。\n",
+            "image": "https://80shuo.com/images/learning/subnav.png",
+            "date_modified": "2021-03-11T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/03/02/theme-learning-post.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/03/02/theme-learning-post.html",
+            "title": "Post 模板文件编写",
+            "summary": "\n上篇我们已经完成了文章列表页,但还看不到文章内容,本篇我们就来编写文章详情页来展示文章的内容及文章对应的一些元数据。eg.作者、发布日期、分类、标签等。\n",
+            "image": "https://codelove9.github.io/myBlog/images/learning/post.png",
+            "date_modified": "2021-03-02T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2020/01/26/theme-learning.html",
+            "url": "https://codelove9.github.io/myBlog/post/2020/01/26/theme-learning.html",
+            "title": "从零开始制作VuePress主题",
+            "date_modified": "2020-01-26T00:00:00.000Z"
+        },
+        {
+            "id": "https://codelove9.github.io/myBlog/post/2021/02/25/theme-learning-template.html",
+            "url": "https://codelove9.github.io/myBlog/post/2021/02/25/theme-learning-template.html",
+            "title": "VuePress 模板文件和布局",
+            "summary": "\n在 VuePress 中 Markdown 文件是元数据（页面内容、配置等）的提供者，而布局组件负责消费他们。VuePress中的模板文件指的就是普通的Vue组件,它可以配合布局组件共同处理这些元数据,渲染出我们的主题页面。从本篇开始,假设你已具备Vue应用的开发基础, 如果没有接触过Vue开发请先移步Vue官网。\n",
+            "image": "https://80shuo.com/images/learning/layout.svg",
+            "date_modified": "2021-02-25T00:00:00.000Z"
+        }
+    ]
+}
