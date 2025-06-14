@@ -1,9 +1,5 @@
 # XiaoChen's Blog
 
-<p align="center">
-  <a href='https://github.com/codeLove9/myBlog'><img src='https://80shuo.com/images/maker-logo.svg' height='120px'></a>
-</p>
-
 A flat and clean Blog for VuePress site. inspired by [Vuepress-theme-maker](https://github.com/80maker/vuepress-theme-maker)
 
 ## Features
@@ -47,7 +43,7 @@ module.exports = {
 
 For more details, see [Theme Doc](https://codelove9.github.io/myBlog/)
 
-## Blog Online 
+## Blog Online
 
 [github-pages](https://codelove9.github.io/myBlog/)
 
@@ -67,9 +63,11 @@ For more details, see [Theme Doc](https://codelove9.github.io/myBlog/)
 
 ## Deploy to Github Pages
 
-```
-npm run deploy
-```
+- 根目录下运行命令： `bash deploy.sh`
+
+- 在vsCode终端或者cmd中运行会抛出错误
+
+- 需要在powerShell或者gitBash中运行
 
 ## Thanks to
 
